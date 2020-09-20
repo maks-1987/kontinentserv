@@ -513,6 +513,7 @@ header {
   color: #f78000;
   text-align: center;
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 .services .services__block {
   display: -webkit-box;
@@ -539,4 +540,12 @@ header {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.connect .container .connect-block__contacts .contacts-title {
+  font-size: 46px;
+  font-weight: 700;
+  color: #f78000;
+  text-align: center;
+  margin-bottom: 40px;
 }

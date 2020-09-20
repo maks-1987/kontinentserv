@@ -10,7 +10,6 @@
 
 .wrapper {
     // height: 100%;
-    
 }
 .container {
     max-width: 1280px;
@@ -28,7 +27,7 @@ header {
     // background-color: rgba(#1c3672, .7);
     // background: linear-gradient(225deg, rgba(#1628f7, .6) 20%, rgba(#e66465, .6), rgba(#1628f7, .6));
     // border-bottom: 1px solid #f7ac7a;
-    box-shadow: 0px 1px 3px rgb(219, 78, 22, .5);
+    box-shadow: 0px 1px 3px rgb(219, 78, 22, 0.5);
 }
 
 .header-top {
@@ -106,57 +105,87 @@ header {
     }
 }
 // ============ Slider-content ==============
-.my-slick{
+.my-slick {
     // display: none;
-    .slick-track{
+    .slick-track {
         @include flexbox;
         // justify-content: space-between;
     }
-    .my-slick__inner{
-        .my-slick__item{
-            .my-slick__item-content{
+    .my-slick__inner {
+        .my-slick__item {
+            .my-slick__item-content {
                 text-align: center;
                 // margin: 0 auto;
                 height: 500px;
 
-                img{
+                img {
                     height: 100%;
-                };
+                }
             }
         }
-        
     }
 }
 
 // ============= Services ===================
-.services{
+.services {
     margin-top: 40px;
-    
-    .services__title{
+
+    .services__title {
         font-size: 46px;
         font-weight: 700;
         color: #f78000;
         text-align: center;
         margin-bottom: 40px;
+        text-transform: uppercase;
     }
-    .services__block{
+    .services__block {
         @include flexbox();
         align-items: center;
-        // min-height: 300px;    
+        // min-height: 300px;
 
-        .block-img{
+        .block-img {
             flex-basis: 50%;
-            min-height: 550px;   
-            img{
+            min-height: 550px;
+            img {
                 display: none;
-            }         
+            }
         }
-        .block-text{
+        .block-text {
             margin: 0 auto;
         }
-        
     }
-    .services__block.rev{
+    .services__block.rev {
         flex-direction: row-reverse;
+    }
+}
+
+// ============= Connecting ===================
+.connect {
+    .container {
+        .connect-block {
+            &__contacts {
+                .contacts-title {
+                    font-size: 46px;
+                    font-weight: 700;
+                    color: #f78000;
+                    text-align: center;
+                    margin-bottom: 40px;
+                }
+                .contacts-address {
+                }
+                .contacts-phone {
+                }
+            }
+            &__form {
+                .form-inner {
+                    &__input {
+                    }
+                    &__text {
+                    }
+                    &__button {
+                    }
+                }
+            }
+        }
     }
 }
