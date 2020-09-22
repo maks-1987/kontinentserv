@@ -367,6 +367,9 @@ template {
 [hidden] {
   display: none; }
 
+.wrapper {
+  overflow: hidden; }
+
 .container {
   max-width: 1280px;
   margin: 0 auto; }
@@ -467,7 +470,18 @@ header {
       .services .services__block .block-img img {
         display: none; }
     .services .services__block .block-text {
-      margin: 0 auto; }
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.2;
+      text-shadow: black 0 0 10px; }
+      .services .services__block .block-text .phone {
+        display: block;
+        font-weight: 700;
+        color: #f78000;
+        text-shadow: none; }
   .services .services__block.rev {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -487,13 +501,53 @@ header {
   justify-content: space-between; }
   .connect .container .connect-block__contacts {
     -ms-flex-preferred-size: 50%;
-    flex-basis: 50%; }
+    flex-basis: 50%;
+    font-size: 20px;
+    font-weight: 500; }
     .connect .container .connect-block__contacts .contacts-title {
       font-size: 46px;
       font-weight: 700;
       color: #f78000;
-      text-align: center;
+      text-align: left;
       margin-bottom: 40px; }
+    .connect .container .connect-block__contacts .contacts-address {
+      padding-top: 30px;
+      width: 50%; }
+    .connect .container .connect-block__contacts .contacts-phone {
+      padding-top: 40px; }
+      .connect .container .connect-block__contacts .contacts-phone li {
+        padding-top: 20px; }
   .connect .container .connect-block__form {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%; }
+    .connect .container .connect-block__form .form-inner {
+      max-width: 700px; }
+      .connect .container .connect-block__form .form-inner__input input {
+        padding-top: 20px;
+        margin-right: 30px;
+        border-bottom: black 1px solid; }
+      .connect .container .connect-block__form .form-inner__input::-webkit-input-placeholder {
+        font-size: 16px;
+        font-style: italic; }
+      .connect .container .connect-block__form .form-inner__input:-ms-input-placeholder {
+        font-size: 16px;
+        font-style: italic; }
+      .connect .container .connect-block__form .form-inner__input::-ms-input-placeholder {
+        font-size: 16px;
+        font-style: italic; }
+      .connect .container .connect-block__form .form-inner__input::placeholder {
+        font-size: 16px;
+        font-style: italic; }
+      .connect .container .connect-block__form .form-inner__text {
+        padding-top: 20px;
+        width: 100%; }
+        .connect .container .connect-block__form .form-inner__text label {
+          border-bottom: black 1px solid; }
+      .connect .container .connect-block__form .form-inner__button {
+        display: inline-block;
+        margin-top: 15px;
+        border: chocolate 1px solid;
+        padding: 10px; }
+
+.map {
+  margin-top: 50px; }
