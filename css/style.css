@@ -439,13 +439,13 @@ header {
   display: flex; }
 
 .my-slick .my-slick__inner .my-slick__item .my-slick__item-content {
-  text-align: center;
-  height: 500px; }
+  height: 700px;
+  text-align: center; }
   .my-slick .my-slick__inner .my-slick__item .my-slick__item-content img {
     height: 100%; }
 
 .services {
-  margin-top: 40px; }
+  margin-top: 60px; }
   .services .services__title {
     font-size: 46px;
     font-weight: 700;

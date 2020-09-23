@@ -110,14 +110,14 @@ header {
     // display: none;
     .slick-track {
         @include flexbox;
-        // justify-content: space-between;
+
     }
     .my-slick__inner {
         .my-slick__item {
+            
             .my-slick__item-content {
+                height: 700px;
                 text-align: center;
-                // margin: 0 auto;
-                height: 500px;
 
                 img {
                     height: 100%;
@@ -129,7 +129,7 @@ header {
 
 // ============= Services ===================
 .services {
-    margin-top: 40px;
+    margin-top: 60px;
 
     .services__title {
         font-size: 46px;
