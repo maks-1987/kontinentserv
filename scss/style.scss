@@ -250,9 +250,24 @@ header {
 
 // ============ footer ===========
 .footer{
+    margin: 50px 0 10px 0;
+    font-size: 16px;
+    border-top: chocolate 1px solid;
     .container{
-        .footer-contact{}
-        .footer-social{}
-        .footer-privacy{}
+        text-align: center;
+        .footer-contact{
+            padding-top: 20px;
+        }
+
+        .footer-social{
+            padding-top: 20px;
+            img{
+                height: 30px;
+                // color: darkgoldenrod;
+            }
+        }
+        .footer-privacy{
+            padding-top: 20px;
+        }
     }
 }
