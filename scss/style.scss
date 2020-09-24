@@ -241,6 +241,33 @@ header {
     }
 }
 
+// ==================================================
+.exampleform {
+    margin-top: 60px;
+    .container {
+        .exampleform__inner {
+            padding-bottom: 40px;
+            min-height: 400px;
+            .exampleform__content {
+                max-width: 800px;
+                .exampleform__content-inner {
+                    @include flexbox;
+                    justify-content: space-between;
+                    .exampleform__content-left {
+                        border: #f7ac7a 1px solid;
+                        max-width: 250px;
+                    }
+                    .exampleform__content-right {
+                        border: #f7ac7a 1px solid;
+                        max-width: 500px;
+                    }
+                }
+            }
+        }
+    }
+}
+// ==================================================
+
 // ============= map =============
 .map {
     margin-top: 50px;
@@ -249,24 +276,24 @@ header {
 }
 
 // ============ footer ===========
-.footer{
+.footer {
     margin: 50px 0 10px 0;
     font-size: 16px;
     border-top: chocolate 1px solid;
-    .container{
+    .container {
         text-align: center;
-        .footer-contact{
+        .footer-contact {
             padding-top: 20px;
         }
 
-        .footer-social{
+        .footer-social {
             padding-top: 20px;
-            img{
+            img {
                 height: 30px;
                 // color: darkgoldenrod;
             }
         }
-        .footer-privacy{
+        .footer-privacy {
             padding-top: 20px;
         }
     }
