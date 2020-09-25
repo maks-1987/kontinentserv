@@ -430,19 +430,20 @@ header {
     .header-bottom .container .header-bottom-nav .header-bottom-list .header-bottom-list__item:hover {
       border-bottom: 1px solid #f78000; }
 
-.my-slick .slick-track {
-  display: -webkit-box;
-  display: -moz-box;
-  display: ms-flexbox;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-
-.my-slick .my-slick__inner .my-slick__item .my-slick__item-content {
-  height: 700px;
-  text-align: center; }
-  .my-slick .my-slick__inner .my-slick__item .my-slick__item-content img {
-    height: 100%; }
+.my-slick {
+  margin-top: 50px; }
+  .my-slick .slick-track {
+    display: -webkit-box;
+    display: -moz-box;
+    display: ms-flexbox;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .my-slick .my-slick__inner .my-slick__item .my-slick__item-content {
+    height: 700px;
+    text-align: center; }
+    .my-slick .my-slick__inner .my-slick__item .my-slick__item-content img {
+      height: 100%; }
 
 .services {
   margin-top: 60px; }
@@ -520,34 +521,79 @@ header {
   .connect .container .connect-block__form {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%; }
-    .connect .container .connect-block__form .form-inner {
-      max-width: 700px; }
-      .connect .container .connect-block__form .form-inner__input input {
-        padding-top: 20px;
-        margin-right: 30px;
+    .connect .container .connect-block__form .form-inner__input input {
+      width: 100%;
+      padding-top: 20px;
+      margin-right: 30px;
+      border-bottom: black 1px solid; }
+    .connect .container .connect-block__form .form-inner__input::-webkit-input-placeholder {
+      font-size: 16px;
+      font-style: italic; }
+    .connect .container .connect-block__form .form-inner__input:-ms-input-placeholder {
+      font-size: 16px;
+      font-style: italic; }
+    .connect .container .connect-block__form .form-inner__input::-ms-input-placeholder {
+      font-size: 16px;
+      font-style: italic; }
+    .connect .container .connect-block__form .form-inner__input::placeholder {
+      font-size: 16px;
+      font-style: italic; }
+    .connect .container .connect-block__form .form-inner__text {
+      padding-top: 20px; }
+      .connect .container .connect-block__form .form-inner__text label {
         border-bottom: black 1px solid; }
-      .connect .container .connect-block__form .form-inner__input::-webkit-input-placeholder {
-        font-size: 16px;
-        font-style: italic; }
-      .connect .container .connect-block__form .form-inner__input:-ms-input-placeholder {
-        font-size: 16px;
-        font-style: italic; }
-      .connect .container .connect-block__form .form-inner__input::-ms-input-placeholder {
-        font-size: 16px;
-        font-style: italic; }
-      .connect .container .connect-block__form .form-inner__input::placeholder {
-        font-size: 16px;
-        font-style: italic; }
-      .connect .container .connect-block__form .form-inner__text {
-        padding-top: 20px;
-        width: 100%; }
-        .connect .container .connect-block__form .form-inner__text label {
-          border-bottom: black 1px solid; }
-      .connect .container .connect-block__form .form-inner__button {
-        display: inline-block;
-        margin-top: 15px;
-        border: chocolate 1px solid;
-        padding: 10px; }
+    .connect .container .connect-block__form .form-inner__button {
+      display: inline-block;
+      margin-top: 15px;
+      border: chocolate 1px solid;
+      padding: 10px; }
+
+.exampleform {
+  margin-top: 70px; }
+  .exampleform .container .exampleform__inner {
+    padding-bottom: 40px;
+    min-height: 220px; }
+    .exampleform .container .exampleform__inner .exampleform__content {
+      max-width: 800px; }
+      .exampleform .container .exampleform__inner .exampleform__content .exampleform__content-inner {
+        display: -webkit-box;
+        display: -moz-box;
+        display: ms-flexbox;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .exampleform .container .exampleform__inner .exampleform__content .exampleform__content-inner label,
+        .exampleform .container .exampleform__inner .exampleform__content .exampleform__content-inner input,
+        .exampleform .container .exampleform__inner .exampleform__content .exampleform__content-inner textarea,
+        .exampleform .container .exampleform__inner .exampleform__content .exampleform__content-inner select {
+          display: block;
+          width: 100%; }
+        .exampleform .container .exampleform__inner .exampleform__content .exampleform__content-inner input,
+        .exampleform .container .exampleform__inner .exampleform__content .exampleform__content-inner textarea,
+        .exampleform .container .exampleform__inner .exampleform__content .exampleform__content-inner select {
+          margin-bottom: 12px;
+          border: #000000 1px solid; }
+        .exampleform .container .exampleform__inner .exampleform__content .exampleform__content-inner label {
+          line-height: 30px; }
+        .exampleform .container .exampleform__inner .exampleform__content .exampleform__content-inner input {
+          outline: none;
+          height: 40px;
+          border: 1px solid #e6e6e6;
+          padding: 0px 10px; }
+        .exampleform .container .exampleform__inner .exampleform__content .exampleform__content-inner select {
+          outline: none;
+          height: 40px;
+          border: 1px solid #e6e6e6;
+          padding: 0px 10px; }
+        .exampleform .container .exampleform__inner .exampleform__content .exampleform__content-inner .exampleform__content-left {
+          max-width: 250px;
+          width: 100%; }
+        .exampleform .container .exampleform__inner .exampleform__content .exampleform__content-inner .exampleform__content-right {
+          max-width: 500px;
+          width: 100%; }
 
 .map {
   margin-top: 50px; }
