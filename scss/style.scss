@@ -131,7 +131,7 @@ header {
 .services {
     margin-top: 40px;
     margin-top: 60px;
-    
+
     .services__title {
         font-size: 46px;
         font-weight: 700;
@@ -178,52 +178,36 @@ header {
 .connect {
     .container {
         .connect-block {
-            &__contacts {
             @include flexbox;
-            margin-top: 60px;
-            // text-align: center;
             justify-content: space-between;
+            margin-top: 60px;
 
             &__contacts {
                 flex-basis: 50%;
                 font-size: 20px;
                 font-weight: 500;
+
                 .contacts-title {
                     font-size: 46px;
                     font-weight: 700;
                     color: #f78000;
-                    text-align: center;
-                    margin-bottom: 40px;
-                }
-                .contacts-address {
-                }
-                .contacts-phone {
-                }
-            }
-            &__form {
-                .form-inner {
-                    &__input {
-                    }
-                    &__text {
-                    }
-                    &__button {
-                    text-align: left;
-                    margin-bottom: 40px;
                 }
                 .contacts-address {
                     padding-top: 30px;
                     width: 50%;
                 }
                 .contacts-phone {
-                    padding-top: 40px;
+                    padding-top: 30px;
                     li {
                         padding-top: 20px;
                     }
                 }
             }
+
             &__form {
+                // display: none;
                 flex-basis: 50%;
-                // height: 200px;
+
                 .form-inner {
                     // max-width: 700px;
 
@@ -245,11 +229,14 @@ header {
                     }
                     &__text {
                         padding-top: 20px;
-                        // padding-right: 20px;
-
-                        label {
-                            border-bottom: black 1px solid;
+                       
+                        textarea {
+                            display: block;
+                            border-bottom: 1px #000 solid;
+                            width: 100%;
+                            height: 7rem;
                         }
+                        // padding-right: 20px;
                     }
                     &__button {
                         display: inline-block;
@@ -299,14 +286,14 @@ header {
                         line-height: 30px;
                         // margin-bottom: 20px;
                     }
-                    input{
+                    input {
                         // margin-bottom: 8px;
                         outline: none;
                         height: 40px;
                         border: 1px solid #e6e6e6;
                         padding: 0px 10px;
                     }
-                    select{
+                    select {
                         // margin-bottom: 8px;
                         outline: none;
                         height: 40px;

@@ -4,7 +4,7 @@ $(function () {
         // dots: true,
         infinite: true,
         // adaptiveHeight:true,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
         speed: 900,
         easing: 'ease', // animation
