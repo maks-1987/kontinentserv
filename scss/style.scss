@@ -10,10 +10,7 @@
 
 .wrapper {
     // height: 100%;
-<<<<<<< HEAD
-=======
     overflow: hidden;
->>>>>>> ebfbfcdf4050b574f56d954febc163e08d084c48
 }
 .container {
     max-width: 1280px;
@@ -31,11 +28,7 @@ header {
     // background-color: rgba(#1c3672, .7);
     // background: linear-gradient(225deg, rgba(#1628f7, .6) 20%, rgba(#e66465, .6), rgba(#1628f7, .6));
     // border-bottom: 1px solid #f7ac7a;
-<<<<<<< HEAD
     box-shadow: 0px 1px 3px rgb(219, 78, 22, 0.5);
-=======
-    box-shadow: 0px 1px 3px rgb(219, 78, 0.5);
->>>>>>> ebfbfcdf4050b574f56d954febc163e08d084c48
 }
 
 .header-top {
@@ -115,28 +108,16 @@ header {
 // ============ Slider-content ==============
 .my-slick {
     // display: none;
-<<<<<<< HEAD
     .slick-track {
         @include flexbox;
         // justify-content: space-between;
-=======
-    margin-top: 50px;
-
-    .slick-track {
-        @include flexbox;
->>>>>>> ebfbfcdf4050b574f56d954febc163e08d084c48
     }
     .my-slick__inner {
         .my-slick__item {
             .my-slick__item-content {
-<<<<<<< HEAD
                 text-align: center;
                 // margin: 0 auto;
                 height: 500px;
-=======
-                height: 700px;
-                text-align: center;
->>>>>>> ebfbfcdf4050b574f56d954febc163e08d084c48
 
                 img {
                     height: 100%;
@@ -148,12 +129,9 @@ header {
 
 // ============= Services ===================
 .services {
-<<<<<<< HEAD
     margin-top: 40px;
-=======
     margin-top: 60px;
->>>>>>> ebfbfcdf4050b574f56d954febc163e08d084c48
-
+    
     .services__title {
         font-size: 46px;
         font-weight: 700;
@@ -175,9 +153,7 @@ header {
             }
         }
         .block-text {
-<<<<<<< HEAD
             margin: 0 auto;
-=======
             flex-basis: 50%;
             text-align: center;
             font-size: 20px;
@@ -191,7 +167,6 @@ header {
                 color: #f78000;
                 text-shadow: none;
             }
->>>>>>> ebfbfcdf4050b574f56d954febc163e08d084c48
         }
     }
     .services__block.rev {
@@ -203,9 +178,7 @@ header {
 .connect {
     .container {
         .connect-block {
-<<<<<<< HEAD
             &__contacts {
-=======
             @include flexbox;
             margin-top: 60px;
             // text-align: center;
@@ -215,12 +188,10 @@ header {
                 flex-basis: 50%;
                 font-size: 20px;
                 font-weight: 500;
->>>>>>> ebfbfcdf4050b574f56d954febc163e08d084c48
                 .contacts-title {
                     font-size: 46px;
                     font-weight: 700;
                     color: #f78000;
-<<<<<<< HEAD
                     text-align: center;
                     margin-bottom: 40px;
                 }
@@ -236,7 +207,6 @@ header {
                     &__text {
                     }
                     &__button {
-=======
                     text-align: left;
                     margin-bottom: 40px;
                 }
@@ -286,15 +256,12 @@ header {
                         margin-top: 15px;
                         border: chocolate 1px solid;
                         padding: 10px;
->>>>>>> ebfbfcdf4050b574f56d954febc163e08d084c48
                     }
                 }
             }
         }
     }
 }
-<<<<<<< HEAD
-=======
 
 // ==================================================
 .exampleform {
@@ -392,4 +359,3 @@ header {
         }
     }
 }
->>>>>>> ebfbfcdf4050b574f56d954febc163e08d084c48
