@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontinentserv</title>
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,27 +14,17 @@
         <header>
             <div class="header-top">
                 <div class="container">
-                    <div class="header-top__logo">
-                        <a href="/"><img src="img/logo.png" alt=""></a>
-                    </div>
                     <div class="header-top__row">
-                        <div class="header-top__phone">
-                            <ul class="header-top__phone-list">
-                                <li><a href="tel:+380504253205">+38 (050) 425 32 05</a></li>
-                                <li><a href="tel:+380504253205">+38 (050) 481 30 14</a></li>
-                            </ul>
+                        <div class="header-top__logo">
+                            <a class="header-logo" href="#"></a>
                         </div>
                         <div class="header-top__contacts">
-                            <div class="header-top__social">
-                                <a href="https://www.instagram.com/accounts/login/?next=/continent_serv/">
-                                    <img src="img/insta.svg" alt="">
-                                </a>
-                            </div>
-                            <div class="header-top__mail">
-                                <a href="/">ekkontinent@gmail.com</a>
-                            </div>
+                            <ul class="header-top__contacts-list">
+                                <li><a class="phone" href="tel:+380504253205">+38 (050) 425 32 05</a></li>
+                                <li><a class="phone" href="tel:+380504253205">+38 (050) 481 30 14</a></li>
+                                <li><a class="mail" href="mailto:ekkontinent@gmail.com">ekkontinent@gmail.com</a></li>
+                            </ul>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -41,14 +32,15 @@
                 <div class="container">
                     <nav class="header-bottom-nav">
                         <ul class="header-bottom-list">
-                            <li class="header-bottom-list__item"><a href="/">Головна</a></li>
-                            <li class="header-bottom-list__item"><a href="/">Послуги</a></li>
-                            <li class="header-bottom-list__item"><a href="/">Контакти</a></li>
-                            <li class="header-bottom-list__item"><a href="/">Вакансії</a></li>
+                            <li class="header-bottom-list__item"><a href="#">Головна</a></li>
+                            <li class="header-bottom-list__item"><a href="#">Послуги</a></li>
+                            <li class="header-bottom-list__item"><a href="#">Вакансії</a></li>
+                            <li class="header-bottom-list__item"><a href="#">Контакти</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
+
         </header>
 
         <!-- SLIDER-CONTENT -->
@@ -83,33 +75,25 @@
                 Наші послуги
             </div>
             <div class="services__block">
-                <div class="block-img" style="background-image: url('img/services/01.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;">
-                    <img src="img/services/01.jpg" alt="">
+                <div class="block-img engineering">
                 </div>
                 <div class="block-text">
                     Технічне обслуговування та ремонт інженерних комунікацій
                 </div>
             </div>
             <div class="services__block rev">
-                <div class="block-img" style="background-image: url('img/services/02.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;">
-                    <img src="img/services/02.jpg" alt="">
+                <div class="block-img thermal">
                 </div>
                 <div class="block-text">
                     Забезпечимо комфортний тепловий режим в житлових і виробничих приміщеннях
                 </div>
             </div>
             <div class="services__block">
-                <div class="block-img" style="background-image: url('img/services/03.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;">
-                    <img src="img/services/03.jpg" alt="">
+                <div class="block-img repairsys">
                 </div>
                 <div class="block-text">
-                    <ul>Послуги по технічному обслуговуванню і ремонту систем:
+                    Послуги по технічному обслуговуванню і ремонту систем:
+                    <ul>
                         <li>- опалення</li>
                         <li>- водопостачання</li>
                         <li>- каналізації</li>
@@ -119,10 +103,7 @@
                 </div>
             </div>
             <div class="services__block rev">
-                <div class="block-img" style="background-image: url('img/services/04.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;">
-                    <img src="img/services/04.jpg" alt="">
+                <div class="block-img cashmachine">
                 </div>
                 <div class="block-text">
                     Технічне обслуговування касових апаратів, заправка, відновлення картриджів
@@ -130,22 +111,15 @@
                 </div>
             </div>
             <div class="services__block">
-                <div class="block-img" style="background-image: url('img/services/05.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;">
-                    <img src="img/services/05.jpg" alt="">
+                <div class="block-img tvinternet">
                 </div>
                 <div class="block-text">
                     Кабельне телебачення та інтернет
                     <span class="phone">+38(050)-342-31-50</span>
-
                 </div>
             </div>
             <div class="services__block rev">
-                <div class="block-img" style="background-image: url('img/services/062.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;">
-                    <img src="img/services/06.jpg" alt="">
+                <div class="block-img counter">
                 </div>
                 <div class="block-text">
                     Монтаж, демонтаж і установка лічильників водопостачання
@@ -240,13 +214,11 @@
 
         <!-- MAP -->
         <section class="map">
-            <div class="container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2641.9529687208574!2d35.86660511575239!3d48.53413303143662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40deb82874ae53ef%3A0xe785bf820c778cf5!2z0KLQntCSINCa0L7QvdGC0LjQvdC10L3Rgi0g0YHQtdGA0LLRltGB!5e0!3m2!1sru!2sua!4v1600774901769!5m2!1sru!2sua"
-                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0">
-                </iframe>
-            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2641.9529687208574!2d35.86660511575239!3d48.53413303143662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40deb82874ae53ef%3A0xe785bf820c778cf5!2z0KLQntCSINCa0L7QvdGC0LjQvdC10L3Rgi0g0YHQtdGA0LLRltGB!5e0!3m2!1sru!2sua!4v1600774901769!5m2!1sru!2sua"
+                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0">
+            </iframe>
         </section>
 
         <!-- FOOTER -->

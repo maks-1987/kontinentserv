@@ -25,81 +25,96 @@ body {
 // =================================================
 // =============== HEADER ===============
 header {
-    // background-color: rgba(#1c3672, .7);
-    // background: linear-gradient(225deg, rgba(#1628f7, .6) 20%, rgba(#e66465, .6), rgba(#1628f7, .6));
-    // border-bottom: 1px solid #f7ac7a;
     box-shadow: 0px 1px 3px rgb(219, 78, 22, 0.5);
-}
 
-.header-top {
-    height: 100px;
-    border-bottom: 1px solid #f7ac7a;
+    .header-top {
+        height: 100px;
+        border-bottom: 1px solid #f7ac7a;
+        padding: 5px 10px 0 5px;
 
-    .container {
-        text-align: right;
-        position: relative;
+        .container {
+            text-align: right;
+            position: relative;
 
-        .header-top__logo {
-            position: absolute;
-            top: 1rem;
-            left: 1rem;
+            .header-top__row {
+                @include flexbox;
+                justify-content: space-between;
 
-            img {
-                height: 100%;
-            }
-        }
-
-        .header-top__row {
-            font-size: 16px;
-
-            .header-top__phone {
-                display: inline-block;
-                margin-right: 10px;
-
-                .header-top__phone-list {
-                    margin-top: 30px;
-
-                    li a {
-                        color: #ff4901;
+                .header-top__logo {
+                    .header-logo {
+                        display: block;
+                        background-image: url("../img/logo.png");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: 100% 100%;
+                        width: 200px;
+                        height: 90px;
                     }
                 }
-            }
-            .header-top__contacts {
-                display: inline-block;
-                margin-right: 10px;
+                .header-top__contacts {
+                    align-self: center;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    .header-top__contacts-list {
+                        text-align: left;
+                        position: relative;
 
-                .header-top__social {
+                        li a {
+                            padding-left: 25px;
+                            color: #d46e29;
+                        }
+                        .phone:before {
+                            content: "\f095";
+                            font-family: "icomoon";
+                            position: absolute;
+                            left: 2px;
+                            color: #1498d5;
+                        }
+                        .mail:before {
+                            content: "\1f300";
+                            font-family: "icomoon";
+                            position: absolute;
+                            left: 0;
+                            color: #1498d5;
+                        }
+                    }
                 }
-                .header-top__mail {
-                    a {
-                        // color: #ff4901;
+                .header-top__contacts {
+                    display: inline-block;
+
+                    .header-top__social {
+                    }
+                    .header-top__mail {
+                        a {
+                            // color: #ff4901;
+                        }
                     }
                 }
             }
         }
     }
-}
-.header-bottom {
-    margin-top: 20px;
-    height: 45px;
+    .header-bottom {
+        margin-top: 20px;
+        height: 45px;
 
-    .container {
-        .header-bottom-nav {
-            .header-bottom-list {
-                @include flexbox;
-                justify-content: flex-end;
+        .container {
+            .header-bottom-nav {
+                .header-bottom-list {
+                    @include flexbox;
+                    justify-content: flex-end;
 
-                .header-bottom-list__item {
-                    margin: 0 20px;
-                    font-size: 25px;
-                    border-bottom: 2px solid transparent;
+                    .header-bottom-list__item {
+                        margin: 0 20px;
+                        font-size: 25px;
+                        border-bottom: 2px solid transparent;
 
-                    a {
-                        color: #000000;
+                        a {
+                            color: #000000;
+                        }
                     }
-                }
-                .header-bottom-list__item:hover {
-                    border-bottom: 1px solid #f78000;
+                    .header-bottom-list__item:hover {
+                        border-bottom: 1px solid #f78000;
+                    }
                 }
             }
         }
@@ -110,14 +125,13 @@ header {
     // display: none;
     .slick-track {
         @include flexbox;
-        // justify-content: space-between;
+        justify-content: space-around;
     }
     .my-slick__inner {
         .my-slick__item {
             .my-slick__item-content {
                 text-align: center;
-                // margin: 0 auto;
-                height: 500px;
+                height: 75vh;
 
                 img {
                     height: 100%;
@@ -143,23 +157,50 @@ header {
     .services__block {
         @include flexbox();
         align-items: center;
-        // min-height: 300px;
 
         .block-img {
             flex-basis: 50%;
             min-height: 550px;
-            img {
-                display: none;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            &.engineering {
+                background-image: url("../img/services/01.jpg");
+            }
+            &.thermal {
+                background-image: url("../img/services/02.jpg");
+            }
+            &.repairsys {
+                background-image: url("../img/services/03.jpg");
+            }
+            &.cashmachine {
+                background-image: url("../img/services/04.jpg");
+            }
+            &.tvinternet {
+                background-image: url("../img/services/05.jpg");
+            }
+            &.counter {
+                background-image: url("../img/services/06.jpg");
             }
         }
         .block-text {
-            margin: 0 auto;
+            padding: 0 5px;
             flex-basis: 50%;
             text-align: center;
             font-size: 20px;
             font-weight: 500;
-            line-height: 1.2;
-            text-shadow: black 0 0 10px;
+            line-height: 1.5;
+            text-shadow: black 0 0 12px;
+
+            ul {
+                width: 55%;
+                margin: 0 auto;
+                li {
+                    line-height: 2;
+                    text-align: left;
+                }
+            }
 
             .phone {
                 display: block;
@@ -229,7 +270,7 @@ header {
                     }
                     &__text {
                         padding-top: 20px;
-                       
+
                         textarea {
                             display: block;
                             border-bottom: 1px #000 solid;
