@@ -11,6 +11,7 @@
 .wrapper {
     // height: 100%;
     overflow: hidden;
+    // position: relative;
 }
 .container {
     max-width: 1280px;
@@ -23,6 +24,24 @@ body {
     font-style: 25px;
 }
 // =================================================
+.top-arrow {
+    position: fixed;
+    display: inline-block;
+    right: 20px;
+    bottom: 10px;
+    width: 200px;
+    left: 20px;
+    text-align: center;
+    line-height: 2;
+    z-index: 10;
+    a {
+        display: inline-block;
+        color: #000000;
+        font-weight: 700;
+        width: 100%;
+        background-color: rgb(20, 152, 213, 18%);
+    }
+}
 // =============== HEADER ===============
 header {
     box-shadow: 0px 1px 3px rgba(156, 129, 118, 0.5);
@@ -284,7 +303,6 @@ header {
                     }
                     .g-recaptcha {
                         padding-top: 10px;
-                        
                     }
                     &__button {
                         display: inline-block;
@@ -382,7 +400,7 @@ header {
         .footer-contact {
             padding-top: 20px;
 
-            li{
+            li {
                 padding-top: 10px;
             }
         }
