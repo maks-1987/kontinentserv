@@ -435,7 +435,6 @@ body {
 .top-arrow {
   position: fixed;
   display: inline-block;
-  right: 20px;
   bottom: 10px;
   width: 200px;
   left: 20px;
