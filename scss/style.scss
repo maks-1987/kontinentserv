@@ -25,7 +25,7 @@ body {
 // =================================================
 // =============== HEADER ===============
 header {
-    box-shadow: 0px 1px 3px rgb(219, 78, 22, 0.5);
+    box-shadow: 0px 1px 3px rgba(156, 129, 118, 0.5);
 
     .header-top {
         height: 100px;
@@ -125,7 +125,7 @@ header {
     // display: none;
     .slick-track {
         @include flexbox;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .my-slick__inner {
         .my-slick__item {
@@ -251,11 +251,14 @@ header {
 
                 .form-inner {
                     // max-width: 700px;
+                    input,
+                    textarea {
+                        padding: 2px 5px;
+                    }
 
                     &__input {
                         // width: 200px;
-                        // display: inline-block;
-                        // max-width: 100%;
+                        text-align: center;
                         input {
                             width: 100%;
                             // max-width: 250px;
@@ -264,10 +267,10 @@ header {
                             border-bottom: black 1px solid;
                         }
                     }
-                    &__input::placeholder {
-                        font-size: 16px;
-                        font-style: italic;
-                    }
+                    // &__input::placeholder {
+                    //     font-size: 16px;
+                    //     font-style: italic;
+                    // }
                     &__text {
                         padding-top: 20px;
 
@@ -275,9 +278,13 @@ header {
                             display: block;
                             border-bottom: 1px #000 solid;
                             width: 100%;
-                            height: 7rem;
+                            height: 4rem;
+                            resize: none;
                         }
-                        // padding-right: 20px;
+                    }
+                    .g-recaptcha {
+                        padding-top: 10px;
+                        
                     }
                     &__button {
                         display: inline-block;
@@ -293,6 +300,7 @@ header {
 
 // ==================================================
 .exampleform {
+    display: none;
     margin-top: 70px;
     .container {
         .exampleform__inner {
@@ -373,6 +381,10 @@ header {
         text-align: center;
         .footer-contact {
             padding-top: 20px;
+
+            li{
+                padding-top: 10px;
+            }
         }
 
         .footer-social {
