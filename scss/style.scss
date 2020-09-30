@@ -417,3 +417,22 @@ header {
         }
     }
 }
+
+// ========== vacancy
+.vacancy{
+    .container{
+        .vacancy-row{
+            &__title{
+
+            }
+            &__content{
+                .content-list{
+
+                }
+            }
+            &__contact{
+
+            }
+        }
+    }
+}
