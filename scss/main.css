@@ -1,0 +1,115 @@
+@charset "UTF-8";
+.header {
+  background-color: #002e5b;
+  padding: 20px;
+}
+.header__row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  display: block;
+  background-image: url("../img/logo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 200px;
+  height: 90px;
+}
+.header__contacts {
+  align-self: center;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.header__contacts-list {
+  display: flex;
+}
+.header__contacts-list a {
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 50px;
+  padding-left: 30px;
+}
+.header__contacts-list a:before {
+  font-family: "icomoon";
+  position: absolute;
+  color: #fff;
+  left: 0;
+}
+.header__contacts-list a:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: -10px;
+  left: 50%;
+  right: 50%;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.header__contacts-list a:hover:after {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.header__contacts-list .phone:before {
+  content: "";
+}
+.header__contacts-list .mail:before {
+  content: "🌀";
+}
+
+.nav-top {
+  background-color: #ffb600;
+}
+.nav-top__list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+.nav-top__item {
+  margin: 0 20px;
+  font-size: 25px;
+  border-bottom: 2px solid transparent;
+}
+.nav-top__item a {
+  position: relative;
+  display: block;
+  color: #000000;
+  padding: 20px 0;
+  font-weight: bold;
+}
+.nav-top__item a:before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 0;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  background-color: #002e5b;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.nav-top__item a:hover:before {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

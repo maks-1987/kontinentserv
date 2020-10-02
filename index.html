@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="./scss/main.css">
 </head>
 
 <body>
@@ -19,37 +20,31 @@
             </a>
         </div>
 
-        <header>
-            <div class="header-top" id="header">
-                <div class="container">
-                    <div class="header-top__row">
-                        <div class="header-top__logo">
-                            <a class="header-logo" href="#"></a>
-                        </div>
-                        <div class="header-top__contacts">
-                            <ul class="header-top__contacts-list">
-                                <li><a class="phone" href="tel:+380504253205">+38 (050) 425 32 05</a></li>
-                                <li><a class="phone" href="tel:+380504253205">+38 (050) 481 30 14</a></li>
-                                <li><a class="mail" href="mailto:ekkontinent@gmail.com">ekkontinent@gmail.com</a></li>
-                            </ul>
-                        </div>
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <a class="header__logo" href="#"></a>
+                    <div class="header__contacts">
+                        <ul class="header__contacts-list">
+                            <li><a class="phone" href="tel:+380504253205">+38 (050) 425 32 05</a></li>
+                            <li><a class="phone" href="tel:+380504253205">+38 (050) 481 30 14</a></li>
+                            <li><a class="mail" href="mailto:ekkontinent@gmail.com">ekkontinent@gmail.com</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="header-bottom">
-                <div class="container">
-                    <nav class="header-bottom-nav">
-                        <ul class="header-bottom-list">
-                            <li class="header-bottom-list__item"><a href="#header">Головна</a></li>
-                            <li class="header-bottom-list__item"><a href="#services">Послуги</a></li>
-                            <li class="header-bottom-list__item"><a href="vacancy.html">Вакансії</a></li>
-                            <li class="header-bottom-list__item"><a href="#connect">Контакти</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-
         </header>
+
+        <nav class="nav-top">
+            <div class="container">
+                <ul class="nav-top__list">
+                    <li class="nav-top__item"><a href="#header">Головна</a></li>
+                    <li class="nav-top__item"><a href="#services">Послуги</a></li>
+                    <li class="nav-top__item"><a href="vacancy.html">Вакансії</a></li>
+                    <li class="nav-top__item"><a href="#connect">Контакти</a></li>
+                </ul>
+            </div>
+        </nav>
 
         <!-- SLIDER-CONTENT -->
         <section class="my-slick">

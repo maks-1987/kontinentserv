@@ -1,0 +1,42 @@
+.nav-top {
+  background-color: #ffb600;
+
+  &__list {
+    @include flexbox;
+    justify-content: center;
+  }
+
+  &__item {
+    margin: 0 20px;
+    font-size: 25px;
+    border-bottom: 2px solid transparent;
+
+    a {
+      position: relative;
+      display: block;
+      color: #000000;
+      padding: 20px 0;
+      font-weight: bold;
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 0;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        background-color: #002e5b;
+        @include transition;
+      }
+
+      &:hover {
+        &:before {
+          width: 100%;
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+}
