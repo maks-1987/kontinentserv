@@ -590,24 +590,6 @@ body {
 .map {
   margin-top: 50px; }
 
-.footer {
-  margin: 50px 0 10px 0;
-  font-size: 16px;
-  padding: 0 10px;
-  border-top: chocolate 1px solid; }
-  .footer .container {
-    text-align: center; }
-    .footer .container .footer-contact {
-      padding-top: 20px; }
-      .footer .container .footer-contact li {
-        padding-top: 10px; }
-    .footer .container .footer-social {
-      padding-top: 20px; }
-      .footer .container .footer-social img {
-        height: 30px; }
-    .footer .container .footer-privacy {
-      padding-top: 20px; }
-
 .vacancy {
   margin-top: 60px; }
   .vacancy .container .vacancy-content {
