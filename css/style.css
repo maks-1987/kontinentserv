@@ -528,6 +528,8 @@ header {
         background-image: url("../img/services/05.jpg"); }
       .services .services__block .block-img.counter {
         background-image: url("../img/services/062.jpg"); }
+      .services .services__block .block-img.project {
+        background-image: url("../img/services/07.png"); }
     .services .services__block .block-text {
       padding: 0 5px;
       -ms-flex-preferred-size: 50%;
