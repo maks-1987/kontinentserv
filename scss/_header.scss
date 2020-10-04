@@ -1,0 +1,69 @@
+.header {
+    background-color: #002e5b;
+    padding: 20px;
+
+    &__row {
+        @include flexbox;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        background-image: url("../img/logo.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 200px;
+        height: 90px;
+    }
+
+    &__contacts {
+        align-self: center;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    &__contacts-list {
+        @include flexbox;
+
+        a {
+            position: relative;
+            color: #ffffff;
+            font-size: 20px;
+            margin-left: 50px;
+            padding-left: 30px;
+
+            &:before {
+                font-family: "icomoon";
+                position: absolute;
+                color: #fff;
+                left: 0;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 0px;
+                bottom: -10px;
+                left: 50%;
+                right: 50%;
+                background-color: #fff;
+                @include transition;
+            }
+
+            &:hover {
+                &:after {
+                    width: 100%;
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+        .phone:before {
+            content: "\f095";
+        }
+        .mail:before {
+            content: '\1f300';
+        }
+    }
+}

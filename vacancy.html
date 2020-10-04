@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontinentserv</title>
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/adaptive.css">
+    <!-- <link rel="stylesheet" href="css/fonts.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -18,36 +18,31 @@
                 Вгору
             </a>
         </div>
-        <header>
-            <div class="header-top" id="header">
-                <div class="container">
-                    <div class="header-top__row">
-                        <div class="header-top__logo">
-                            <a class="header-logo" href="#"></a>
-                        </div>
-                        <div class="header-top__contacts">
-                            <ul class="header-top__contacts-list">
-                                <li><a class="phone" href="tel:+380504253205">+38 (050) 425 32 05</a></li>
-                                <li><a class="phone" href="tel:+380504253205">+38 (050) 481 30 14</a></li>
-                                <li><a class="mail" href="mailto:ekkontinent@gmail.com">ekkontinent@gmail.com</a></li>
-                            </ul>
-                        </div>
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__row">
+                    <a class="header__logo" href="index.html#header"></a>
+                    <div class="header__contacts">
+                        <ul class="header__contacts-list">
+                            <li><a class="phone" href="tel:+380504253205">+38 (050) 425 32 05</a></li>
+                            <li><a class="phone" href="tel:+380504253205">+38 (050) 481 30 14</a></li>
+                            <li><a class="mail" href="mailto:ekkontinent@ukr.net">ekkontinent@ukr.net</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="header-bottom">
-                <div class="container">
-                    <nav class="header-bottom-nav">
-                        <ul class="header-bottom-list">
-                            <li class="header-bottom-list__item"><a href="index.html#header">Головна</a></li>
-                            <li class="header-bottom-list__item"><a href="index.html#services">Послуги</a></li>
-                            <li class="header-bottom-list__item"><a href="vacancy.html">Вакансії</a></li>
-                            <li class="header-bottom-list__item"><a href="index.html#connect">Контакти</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
         </header>
+
+        <nav class="nav-top">
+            <div class="container">
+                <ul class="nav-top__list">
+                    <li class="nav-top__item"><a href="index.html#header">Головна</a></li>
+                    <li class="nav-top__item"><a href="index.html#services">Послуги</a></li>
+                    <li class="nav-top__item"><a href="vacancy.html">Вакансії</a></li>
+                    <li class="nav-top__item"><a href="index.html#connect">Контакти</a></li>
+                </ul>
+            </div>
+        </nav>
 
         <!-- VACANCY -->
         <main class="vacancy">
@@ -93,31 +88,58 @@
             </div>
         </main>
 
+        <!-- FOOTER -->
         <footer class="footer">
             <div class="container">
-                <div class="footer-contact">
+                <div class="footer__contact">
                     <ul>
-                        <li>Центрфльний офіс
-                            +38 (050) 340-05-84 | +38 (050) 653-58-05 | ekkontinent@gmail.com
-                            Центральна 68
+                        <li>
+                            <div class="footer__contact-wrapper">
+                                <div class="footer__title">
+                                    Головний офіс
+                                </div>
+                                <div class="footer__phone">
+                                    +38 (050) 340-05-84
+                                </div>
+                                <div class="footer__phone">
+                                    +38 (050) 653-58-05
+                                </div>
+                                <a href="mailto:ekkontinent@ukr.net" class="footer__email">
+                                    ekkontinent@ukr.net
+                                </a>
+                                <div class="footer__address">
+                                    Центральна 68
+                                </div>
+                            </div>
                         </li>
-                        <li> Офіс ТРК
-                            +38 (050) 342-31-50
-                            Гагаріна 10
+                        <li>
+                            <div class="footer__contact-wrapper">
+                                <div class="footer__title">
+                                    Офіс ТРК
+                                </div>
+                                +38 (050) 342-31-50
+                                <div class="footer__address">
+                                    Гагаріна 10
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
                 <div class="footer-social">
                     <a href="https://www.instagram.com/accounts/login/?next=/continent_serv/">
-                        <img src="img/insta.svg" alt="">
+                        <!-- <img src="img/insta.svg" alt=""> -->
                     </a>
                 </div>
-                <div class="footer-privacy">
-                    ©2020 Континент Сервіс,
-                    Монтаж систем опалення | Kontinentservice | Дніпропетровська область
-                </div>
+
             </div>
         </footer>
+
+        <div class="copyright">
+            <div class="container">
+                ©2020 Континент Сервіс,
+                Монтаж систем опалення | Kontinentservice | Дніпропетровська область
+            </div>
+        </div>
     </div>
 
 </body>
