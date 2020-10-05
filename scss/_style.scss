@@ -106,17 +106,19 @@ body {
             }
         }
         .block-text {
-            padding: 0 5px;
+            padding: 0 10px;
             flex-basis: 50%;
             text-align: center;
-            font-size: 20px;
-            font-weight: 500;
+            font-size: 28px;
+            font-weight: 600;
             line-height: 1.5;
-
+            
             ul {
                 width: 55%;
                 margin: 0 auto;
+                
                 li {
+                    list-style: square outside;
                     line-height: 2;
                     text-align: left;
                 }
