@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* RESET STYLES */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -419,6 +418,13 @@ template {
 }
 
 @font-face {
+  font-family: "Conv_Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: local("☺"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?iuzt9i");
   src: url("../fonts/icomoon.eot?iuzt9i#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?iuzt9i") format("truetype"), url("../fonts/icomoon.woff?iuzt9i") format("woff"), url("../fonts/icomoon.svg?iuzt9i#icomoon") format("svg");
@@ -460,6 +466,8 @@ template {
 .header {
   background-color: #002e5b;
   padding: 20px;
+  font-family: Roboto;
+  font-weight: 300;
 }
 .header__row {
   display: -webkit-box;
@@ -587,11 +595,12 @@ template {
 
 html,
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-style: 25px;
+  font-family: Roboto;
+  font-weight: 200;
 }
 
 .top-arrow {
+  visibility: hidden;
   position: fixed;
   display: inline-block;
   bottom: 10px;
@@ -612,9 +621,6 @@ body {
   background-color: rgba(20, 152, 46, 0.9);
 }
 
-.my-slick button {
-  position: absolute;
-}
 .my-slick .slick-track {
   display: -webkit-box;
   display: ms-flexbox;
@@ -624,11 +630,26 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.my-slick .my-slick__inner .my-slick__item .my-slick__item-content {
+.my-slick__inner {
+  position: relative;
+}
+.my-slick__inner .slick-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 10;
+}
+.my-slick__inner .slick-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 10;
+}
+.my-slick__item-content {
   text-align: center;
   height: 75vh;
 }
-.my-slick .my-slick__inner .my-slick__item .my-slick__item-content img {
+.my-slick__item-content img {
   height: 100%;
 }
 
@@ -636,7 +657,7 @@ body {
   margin-top: 40px;
   margin-top: 60px;
 }
-.services .services__title {
+.services__title {
   font-size: 46px;
   font-weight: 700;
   color: #f78000;
@@ -644,7 +665,7 @@ body {
   margin-bottom: 40px;
   text-transform: uppercase;
 }
-.services .services__block {
+.services__block {
   display: -webkit-box;
   display: ms-flexbox;
   display: -ms-flexbox;
@@ -653,7 +674,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.services .services__block .block-img {
+.services__block .block-img {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   min-height: 550px;
@@ -661,28 +682,28 @@ body {
   background-size: cover;
   background-position: center;
 }
-.services .services__block .block-img.engineering {
+.services__block .block-img.engineering {
   background-image: url("../img/services/01.jpg");
 }
-.services .services__block .block-img.thermal {
+.services__block .block-img.thermal {
   background-image: url("../img/services/02.jpg");
 }
-.services .services__block .block-img.repairsys {
+.services__block .block-img.repairsys {
   background-image: url("../img/services/03.jpg");
 }
-.services .services__block .block-img.cashmachine {
+.services__block .block-img.cashmachine {
   background-image: url("../img/services/04.jpg");
 }
-.services .services__block .block-img.tvinternet {
+.services__block .block-img.tvinternet {
   background-image: url("../img/services/05.jpg");
 }
-.services .services__block .block-img.counter {
+.services__block .block-img.counter {
   background-image: url("../img/services/062.jpg");
 }
-.services .services__block .block-img.project {
+.services__block .block-img.project {
   background-image: url("../img/services/07.png");
 }
-.services .services__block .block-text {
+.services__block .block-text {
   padding: 0 5px;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -691,21 +712,21 @@ body {
   font-weight: 500;
   line-height: 1.5;
 }
-.services .services__block .block-text ul {
+.services__block .block-text ul {
   width: 55%;
   margin: 0 auto;
 }
-.services .services__block .block-text ul li {
+.services__block .block-text ul li {
   line-height: 2;
   text-align: left;
 }
-.services .services__block .block-text .phone {
+.services__block .block-text .phone {
   display: block;
   font-weight: 700;
   color: #f78000;
   text-shadow: none;
 }
-.services .services__block.rev {
+.services__block.rev {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;

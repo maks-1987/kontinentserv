@@ -1,6 +1,8 @@
 .header {
     background-color: #002e5b;
     padding: 20px;
+    font-family: $fnt;
+    font-weight: 300;
 
     &__row {
         @include flexbox;

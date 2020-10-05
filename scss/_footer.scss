@@ -16,6 +16,7 @@
         li {
             flex-basis: 50%;
             line-height: 1.3;
+            
             // text-align: center;
             // padding: 0 10%;
             @include flexbox;
@@ -26,6 +27,10 @@
             }
         }
     }
+
+    // &__contact-wrapper{
+    //     // width: 50%;
+    // }
 
     &__title {
         position: relative;
