@@ -412,7 +412,7 @@ template {
 .header {
   background-color: #002e5b;
   padding: 20px;
-  font-family: Roboto;
+  font-family: "Conv_Roboto-Regular";
   font-weight: 300; }
   .header__row {
     display: -webkit-box;
@@ -532,7 +532,7 @@ template {
 
 html,
 body {
-  font-family: Roboto;
+  font-family: "Conv_Roboto-Regular";
   font-weight: 200; }
 
 #menu__toggle {
