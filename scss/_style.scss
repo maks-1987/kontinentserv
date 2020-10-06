@@ -13,6 +13,9 @@ body {
     font-weight: 200;
 }
 // ============= BURGERMENU ==========================
+.hamburger-menu {
+    margin-top: -16px;
+}
 #menu__toggle {
     opacity: 0;
 }
@@ -26,7 +29,7 @@ body {
     width: 26px;
     height: 20px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 12;
 }
 // line-menu
 .menu__btn > span,
@@ -48,8 +51,8 @@ body {
 }
 .menu__box {
     display: block;
-    // position: fixed;
-    // visibility: hidden;
+    position: fixed;
+    visibility: hidden;
     top: 0;
     left: -100%;
     width: 300px;
@@ -60,6 +63,7 @@ body {
     text-align: center;
     background-color: #eceff1;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    z-index: 11;
 }
 
 .menu__item {
@@ -90,8 +94,8 @@ body {
     visibility: visible;
     left: 0;
 }
-
 // =================================================
+
 .top-arrow {
     visibility: hidden;
     position: fixed;
@@ -115,8 +119,68 @@ body {
     }
 }
 
+// ============ Banner ====================
+.banner {
+    background-image: url("../img/banner.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    margin-bottom: 60px;
+}
+.banner:before {
+    content: "";
+    height: 80vh;
+    background: rgba(255, 153, 0, 0.3);
+    // backdrop-filter: blur(3px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.banner__row {
+    padding-top: 15%;
+    // padding-left: 10%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+}
+.banner__row-item {
+    font-size: 45px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: #000 3px 3px 10px;
+
+    span {
+        font-size: 60px;
+        // letter-spacing: .6px;
+        color: $orange;
+    }
+}
+
 // ============ Slider-content ==============
 .my-slick {
+    p {
+        font-size: 46px;
+        font-weight: 700;
+        color: $orange;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        line-height: 1.4;
+    }
+    p::after {
+        content: "";
+        position: relative;
+        display: block;
+        height: 1px;
+        width: 5%;
+        background: $orange;
+        margin: 0 auto;
+    }
     // display: none;
     .slick-track {
         @include flexbox;
@@ -159,7 +223,7 @@ body {
     &__title {
         font-size: 46px;
         font-weight: 700;
-        color: #f78000;
+        color: $orange;
         text-align: center;
         margin-bottom: 40px;
         text-transform: uppercase;
@@ -219,7 +283,7 @@ body {
             .phone {
                 display: block;
                 font-weight: 700;
-                color: #f78000;
+                color: $orange;
                 text-shadow: none;
             }
         }
@@ -246,7 +310,7 @@ body {
                 .contacts-title {
                     font-size: 46px;
                     font-weight: 700;
-                    color: #f78000;
+                    color: $orange;
                 }
                 .contacts-address {
                     padding-top: 30px;
@@ -404,7 +468,7 @@ body {
                 flex-basis: 30%;
                 margin-top: 15px;
                 padding: 0 10px;
-                border: #f78000 1px solid;
+                border: $orange 1px solid;
 
                 &__title {
                     text-align: center;
