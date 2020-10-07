@@ -3,7 +3,7 @@
     overflow: hidden;
 }
 .container {
-    max-width: 1280px;
+    max-width: 1140px;
     margin: 0 auto;
     // padding: 0 10px;
 }
@@ -94,8 +94,8 @@ body {
     visibility: visible;
     left: 0;
 }
-// =================================================
 
+// ============= Arrow ========================
 .top-arrow {
     visibility: hidden;
     position: fixed;
@@ -132,7 +132,7 @@ body {
 .banner:before {
     content: "";
     height: 80vh;
-    background: rgba(255, 153, 0, 0.3);
+    background: rgba(42, 34, 22, 0.5);
     // backdrop-filter: blur(3px);
     position: absolute;
     top: 0;
@@ -162,6 +162,15 @@ body {
 }
 
 // ============ Slider-content ==============
+.slick-track {
+    @include flexbox;
+    justify-content: space-between;
+    height: 75vh;
+}
+.slick-list {
+    
+    overflow: hidden;
+}
 .my-slick {
     p {
         font-size: 46px;
@@ -181,41 +190,46 @@ body {
         background: $orange;
         margin: 0 auto;
     }
-    // display: none;
-    .slick-track {
-        @include flexbox;
-        justify-content: center;
-    }
     &__inner {
         position: relative;
+        // overflow: hidden;
 
-        .slick-prev {
+        .slick-arrow {
             position: absolute;
             top: 50%;
-            left: 0;
-            z-index: 10;
+            z-index: 5;
+            font-size: 0;
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+            
+            &.slick-prev:before{
+                left: 0;
+                font-family: 'icomoon';
+                content: "\f053";
+            }
+            &.slick-next{
+                right: 0;
+                font-family: 'icomoon';
+                content: "\f054";
+            }
         }
-        .slick-next {
-            position: absolute;
-            top: 50%;
-            right: 0;
-            z-index: 10;
-        }
+        
+
     }
-
-    // &__item {}
-
-    &__item-content {
-        padding: 0 10px;
-        text-align: center;
-        height: 75vh;
-        // max-width: 1140px;
+    &__item {
+        // padding: 0 10px;
+        // text-align: center;
+        
 
         img {
-            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
         }
     }
 }
+
+
 
 // ============= Services ===================
 .services {
@@ -329,10 +343,10 @@ body {
         a {
             color: #000000;
         }
-        .viber{
+        .viber {
             color: $orange;
         }
-        .viber:hover{
+        .viber:hover {
             display: inline-block;
             color: royalblue;
             transform: scale(1.1, 1.2);
@@ -380,10 +394,10 @@ body {
         .g-recaptcha {
             padding-top: 10px;
         }
-        
+
         &__button {
             margin-top: 15px;
-            
+
             a {
                 display: inline-block;
                 margin-top: 15px;
