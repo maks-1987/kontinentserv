@@ -21,18 +21,8 @@
             // padding: 0 10%;
             @include flexbox;
             justify-content: center;
-
-            a {
-                // width: 100%;
-                height: 20px;
-                color: #ffffff;
-            }
         }
     }
-
-    // &__contact-wrapper{
-    //     // width: 50%;
-    // }
 
     &__title {
         position: relative;
@@ -60,24 +50,20 @@
             font-family: "icomoon";
             content: "\f16d";
             font-size: 30px;
-            color: #ffffff;
+            color: $orange;
         }
         a:hover {
             &:before {
-                color: #ff5e01;
+                color: #ffffff;
             }
         }
     }
-    // .footer-social:before {
-    //     font-family: "icomoon";
-    //     content: "\f16d";
-    //     font-size: 25px;
-    //     color: #ffffff;
-
-    //     // img {
-    //     //     height: 30px;
-    //     // }
-    // }
+    &__email{
+        color: $orange;
+    }
+    &__email:hover{
+        color: #ffffff;
+    }
 }
 .copyright {
     background-color: #0a0a0b;

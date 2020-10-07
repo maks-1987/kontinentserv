@@ -152,7 +152,7 @@ body {
     font-size: 45px;
     font-weight: 700;
     color: #fff;
-    text-shadow: #000 3px 3px 10px;
+    text-shadow: rgb(0, 0, 0) 2px -1px 11px;
 
     span {
         font-size: 60px;
@@ -184,7 +184,7 @@ body {
     // display: none;
     .slick-track {
         @include flexbox;
-        justify-content: space-between;
+        justify-content: center;
     }
     &__inner {
         position: relative;
@@ -206,8 +206,10 @@ body {
     // &__item {}
 
     &__item-content {
+        padding: 0 10px;
         text-align: center;
         height: 75vh;
+        // max-width: 1140px;
 
         img {
             height: 100%;
@@ -296,82 +298,102 @@ body {
 // ============= Connecting ===================
 .connect {
     padding: 0 10px;
-    .container {
-        .connect-block {
-            @include flexbox;
-            justify-content: space-between;
-            margin-top: 60px;
+}
+.connect-block {
+    @include flexbox;
+    justify-content: space-between;
+    margin-top: 60px;
 
-            &__contacts {
-                flex-basis: 50%;
-                font-size: 20px;
-                font-weight: 500;
+    &__contacts {
+        flex-basis: 50%;
+        font-size: 20px;
+        font-weight: 500;
+    }
 
-                .contacts-title {
-                    font-size: 46px;
-                    font-weight: 700;
-                    color: $orange;
-                }
-                .contacts-address {
-                    padding-top: 30px;
-                    width: 50%;
-                }
-                .contacts-phone {
-                    padding-top: 30px;
-                    li {
-                        padding-top: 20px;
-                    }
-                }
+    .contacts-title {
+        font-size: 46px;
+        font-weight: 700;
+        color: $orange;
+    }
+    .contacts-address {
+        padding-top: 30px;
+        width: 50%;
+        line-height: 1.2;
+    }
+    .contacts-phone {
+        padding-top: 30px;
+        li {
+            padding-top: 20px;
+            color: #000000;
+        }
+        a {
+            color: #000000;
+        }
+        .viber{
+            color: $orange;
+        }
+        .viber:hover{
+            display: inline-block;
+            color: royalblue;
+            transform: scale(1.1, 1.2);
+        }
+    }
+
+    &__form {
+        // display: none;
+        flex-basis: 50%;
+    }
+    .form-inner {
+        // max-width: 700px;
+        input,
+        textarea {
+            margin-bottom: 2px;
+            padding: 3px 5px;
+        }
+        input {
+            width: 100%;
+            // max-width: 250px;
+            padding-top: 20px;
+            margin-right: 30px;
+            border-bottom: black 1px solid;
+            // border: 1px 1px 1px 1px;
+        }
+
+        input:focus,
+        textarea:focus {
+            box-shadow: -2px -2px 3px $orange;
+        }
+        &__input {
+        }
+
+        &__text {
+            padding-top: 20px;
+
+            textarea {
+                display: block;
+                border-bottom: 1px #000 solid;
+                width: 100%;
+                height: 4rem;
+                resize: none;
             }
-
-            &__form {
-                // display: none;
-                flex-basis: 50%;
-
-                .form-inner {
-                    // max-width: 700px;
-                    input,
-                    textarea {
-                        padding: 2px 5px;
-                    }
-
-                    &__input {
-                        // width: 200px;
-                        text-align: center;
-                        input {
-                            width: 100%;
-                            // max-width: 250px;
-                            padding-top: 20px;
-                            margin-right: 30px;
-                            border-bottom: black 1px solid;
-                        }
-                    }
-                    // &__input::placeholder {
-                    //     font-size: 16px;
-                    //     font-style: italic;
-                    // }
-                    &__text {
-                        padding-top: 20px;
-
-                        textarea {
-                            display: block;
-                            border-bottom: 1px #000 solid;
-                            width: 100%;
-                            height: 4rem;
-                            resize: none;
-                        }
-                    }
-                    .g-recaptcha {
-                        padding-top: 10px;
-                    }
-                    &__button {
-                        display: inline-block;
-                        margin-top: 15px;
-                        border: chocolate 1px solid;
-                        padding: 10px;
-                    }
-                }
+        }
+        .g-recaptcha {
+            padding-top: 10px;
+        }
+        
+        &__button {
+            margin-top: 15px;
+            
+            a {
+                display: inline-block;
+                margin-top: 15px;
+                padding: 10px;
+                background-color: $orange;
+                color: #ffffff;
             }
+        }
+        &__button:hover {
+            cursor: pointer;
         }
     }
 }
