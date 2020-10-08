@@ -2,12 +2,13 @@
 $(function () {
     $('.my-slick__inner').slick({
         arrows: true,
-        // dots: true,
+        dots: true,
         // fade: true,
         infinite: true,
         // variableWidth: true,
         // adaptiveHeight:true,
-        // slidesToShow: 1,
+        // centerMode:true,
+        // slidesToShow: 2,
         // slidesToScroll: 2,
         speed: 900,
         easing: 'ease', // animation
