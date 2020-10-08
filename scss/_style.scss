@@ -96,27 +96,46 @@ body {
 }
 
 // ============= Arrow ========================
-.top-arrow {
-    visibility: hidden;
+.to-head {
+    // visibility: hidden;
+}
+#button {
+    background-color: rgba(189, 189, 189, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 35px;
     position: fixed;
-    display: inline-block;
-    // right: 20px;
-    bottom: 10px;
-    width: 200px;
-    left: 20px;
-    text-align: center;
-    line-height: 2;
-    z-index: 10;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s;
+    z-index: 1000;
+
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+
     a {
         display: inline-block;
-        color: #000000;
-        font-weight: 700;
+        height: 100%;
         width: 100%;
-        background-color: rgba(20, 152, 46, 0.144);
+        background: url("../img/icons/SVG/keyboard_arrow_up.svg") center / cover no-repeat;
+        opacity: 0.3;
     }
-    a:hover {
-        background-color: rgba(20, 152, 46, 0.9);
+}
+#button:hover {
+    cursor: poiner;
+    background-color: $orange;
+    a {
+        opacity: 1;
     }
+}
+#button:active {
+    background-color: $blue;
+}
+#button.show {
+    opacity: 1;
+    visibility: visible;
 }
 
 // ============ Banner ====================
@@ -140,7 +159,7 @@ body {
     width: 100%;
 }
 .banner__row {
-    padding-top: 15%;
+    padding-top: 25%;
     // padding-left: 10%;
     text-align: center;
     left: 0;
@@ -149,10 +168,16 @@ body {
     z-index: 2;
 }
 .banner__row-item {
+    padding: 0 10px;
     font-size: 45px;
     font-weight: 700;
     color: #fff;
     text-shadow: rgb(0, 0, 0) 2px -1px 11px;
+    margin: 0 auto;
+
+    @media (max-width: 545px) {
+        max-width: 500px;
+    }
 
     span {
         font-size: 60px;
@@ -164,11 +189,12 @@ body {
 // ============ Slider-content ==============
 .slick-track {
     @include flexbox;
-    justify-content: space-between;
+    // justify-content: space-between;
+    align-items: center;
+    text-align: center;
     height: 75vh;
 }
 .slick-list {
-    
     overflow: hidden;
 }
 .my-slick {
@@ -194,33 +220,43 @@ body {
         position: relative;
         // overflow: hidden;
 
+        .slick-arrow:hover {
+            opacity: 1;
+        }
         .slick-arrow {
             position: absolute;
-            top: 50%;
+            top: 45%;
             z-index: 5;
-            font-size: 0;
-            height: 20px;
-            width: 20px;
-            display: inline-block;
-            
-            &.slick-prev:before{
-                left: 0;
-                font-family: 'icomoon';
-                content: "\f053";
+            font-size: 0px;
+            height: 50px;
+            width: 50px;
+            opacity: 0.3;
+            border-radius: 50%;
+
+            // display: inline-block;
+
+            &.slick-prev {
+                left: 0px;
+                background: url("../img/icons/SVG/circle-left.svg");
+                background-repeat: no-repeat;
+                // background-position: center center;
+                background-size: cover;
+                background-color: rgb(255, 215, 197);
+                // margin-left: 20px;
             }
-            &.slick-next{
-                right: 0;
-                font-family: 'icomoon';
-                content: "\f054";
+            &.slick-next {
+                right: 0px;
+                background: url("../img/icons/SVG/circle-right.svg");
+                background-repeat: no-repeat;
+                // background-position: center center;
+                background-size: cover;
+                background-color: rgb(255, 215, 197);
             }
         }
-        
-
     }
     &__item {
         // padding: 0 10px;
         // text-align: center;
-        
 
         img {
             max-width: 100%;
@@ -228,8 +264,6 @@ body {
         }
     }
 }
-
-
 
 // ============= Services ===================
 .services {
@@ -322,6 +356,7 @@ body {
         flex-basis: 50%;
         font-size: 20px;
         font-weight: 500;
+        position: relative;
     }
 
     .contacts-title {
@@ -331,14 +366,37 @@ body {
     }
     .contacts-address {
         padding-top: 30px;
-        width: 50%;
+        width: 70%;
         line-height: 1.2;
     }
+    .contacts-phone li .phone:before {
+        // top: 0;
+    }
     .contacts-phone {
-        padding-top: 30px;
+        margin-top: 25px;
         li {
-            padding-top: 20px;
+            padding-top: 15px;
+            padding-left: 25px;
             color: #000000;
+
+            .mail:before {
+                font-family: "icomoon";
+                content: "\1f300";
+                position: absolute;
+                left: 0;
+            }
+            .phone:before {
+                font-family: "icomoon";
+                content: "\f095";
+                position: absolute;
+                left: 2px;
+            }
+        }
+        .viber-link {
+            line-height: 1.5;
+            background: url("../img/icons/SVG/viber.svg") left no-repeat;
+            background-position: 0 12px;
+            padding-left: 38px;
         }
         a {
             color: #000000;
@@ -355,7 +413,8 @@ body {
 
     &__form {
         // display: none;
-        flex-basis: 50%;
+        margin: 0 auto;
+        flex-basis: 40%;
     }
     .form-inner {
         // max-width: 700px;
