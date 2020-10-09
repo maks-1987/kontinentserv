@@ -41,6 +41,15 @@ $(function () {
     });
 })
 
+// ============= BURGER ================
+$('.menu a').click(function(){
+ 
+    $('.trigger').toggle();
+    $('.menu').toggleClass('round');
+    $('.close').toggle();
+    $('.drop-down').toggleClass('down');
+  });
+
 // ============= SCROLL ================
 $('a[href^="#"').on('click', function () {
     let href = $(this).attr('href');

@@ -15,6 +15,7 @@ body {
 // ============= BURGERMENU ==========================
 .hamburger-menu {
     margin-top: -16px;
+    display: none;
 }
 #menu__toggle {
     opacity: 0;
@@ -93,6 +94,114 @@ body {
 #menu__toggle:checked ~ .menu__box {
     visibility: visible;
     left: 0;
+}
+
+.drop-down {
+    // background-color: red;
+    padding: 25px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: $blue;
+    top: -100%;
+    transition: top 0.4s ease-in-out;
+    text-shadow: 1px 1px 1px darken($blue, 15%);
+    box-shadow: 0 0 10px 2px #000;
+    z-index: 999;
+    li {
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid lighten($blue, 5%);
+        border-top: 1px solid darken($blue, 5%);
+        text-align: center;
+
+        &:nth-child(1) {
+            border-top: 0;
+        }
+        &:nth-child(4) {
+            border-bottom: 0;
+        }
+        &:hover {
+            background: darken($blue, 10%);
+        }
+    }
+    a {
+        display: block;
+        font-size: 18pt;
+        color: #fff;
+        text-decoration: none;
+        font-family: "Carrois Gothic", sans-serif;
+    }
+    h1 {
+        font-family: "Kotta One", serif;
+        font-size: 22pt;
+        text-align: center;
+        color: #fff;
+    }
+}
+.down {
+    top: 0;
+    transition: top 0.4s ease-in-out;
+}
+.menu {
+    box-sizing: content-box !important;
+
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    border: 3px solid #fff;
+    background: $blue;
+    z-index: 999;
+    color: #fff;
+    &:hover {
+        background: ligthen($blue, 5%);
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        font-size: 48pt;
+        font-weight: bold;
+        color: #fff;
+        margin: 0 auto;
+    }
+    .close {
+        display: none;
+    }
+}
+.trigger {
+    animation: menu-spin-back 0.4s ease-in-out;
+    animation-fill-mode: forwards;
+}
+.round {
+    animation: menu-spin 0.4s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes menu-spin {
+    50% {
+        border-radius: 100%;
+    }
+    100% {
+        border-radius: 100%;
+
+        transform: rotate(180deg);
+    }
+}
+@-webkit-keyframes menu-spin-back {
+    50% {
+        border-radius: 0;
+    }
+    100% {
+        border-radius: 0;
+        transform: rotate(-180deg);
+    }
+}
+.white {
+    border-color: #fff;
+    color: #fff !important;
 }
 
 // ============= Arrow ========================
@@ -258,7 +367,7 @@ body {
         .slick-dots li {
             margin: 3px 5px;
 
-            &.slick-active button{
+            &.slick-active button {
                 background-color: transparent;
                 border: 1px solid #000000;
             }
