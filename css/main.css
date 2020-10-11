@@ -523,7 +523,8 @@ template {
   }
 }
 .header__logo {
-  background-image: url("../img/logo.png");
+  background-image: url("../img/logo2.png");
+  border: 2px solid #ffffff;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1104,7 +1105,7 @@ body {
   background-image: url("../img/services/05.jpg");
 }
 .services .block-img.counter {
-  background-image: url("../img/services/062.jpg");
+  background-image: url("../img/services/100.png");
 }
 .services .block-img.project {
   background-image: url("../img/services/07.png");
