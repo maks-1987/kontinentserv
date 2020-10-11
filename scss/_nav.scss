@@ -1,6 +1,10 @@
 .nav-top {
     background-color: #f06c1f;
 
+    @media (max-width: 768px) {
+        display: none;
+    }
+
     &__list {
         @include flexbox;
         justify-content: center;

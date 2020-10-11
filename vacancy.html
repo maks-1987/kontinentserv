@@ -5,33 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontinentserv</title>
-    <!-- <link rel="stylesheet" href="css/fonts.css"> -->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <!-- buton-to-up -->
-        <div class="top-arrow">
-            <a href="#header">
-                Вгору
+        <!-- buton-to-head -->
+        <div class="to-head" id="button">
+            <a href="#">
             </a>
         </div>
 
         <!-- BURGERMENU -->
-        <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-                <span></span>
-            </label>
-            <ul class="menu__box">
-                <li><a class="menu__item" href="index.html#header">Головна</a></li>
-                <li><a class="menu__item" href="index.html#services">Послуги</a></li>
-                <li><a class="menu__item" href="vacancy.html">Вакансії</a></li>
-                <li><a class="menu__item" href="index.html#connect">Контакты</a></li>
-            </ul>
-        </div>
+        <section class="burger">
+            <div class="drop-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html#header">Головна</a></li>
+                        <li><a href="index.html#services">Послуги</a></li>
+                        <li><a href="#vacancy.html">Вакансії</a></li>
+                        <li><a href="index.html#connect">Контакти</a></li>
+                        <li><a class="phone" href="tel:+380504253205">+38 (050) 425 32 05</a></li>
+                        <li><a class="phone" href="tel:+380504253205">+38 (050) 481 30 14</a></li>
+                        <li><a class="mail" href="mailto:ekkontinent@ukr.net">ekkontinent@ukr.net</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu">
+                <a class="trigger" href="#">&equiv;</a>
+                <a class="close" href="#">&times;</a>
+            </div>
+        </section>
 
         <header class="header" id="header">
             <div class="container">
@@ -53,7 +57,7 @@
                 <ul class="nav-top__list">
                     <li class="nav-top__item"><a href="index.html#header">Головна</a></li>
                     <li class="nav-top__item"><a href="index.html#services">Послуги</a></li>
-                    <li class="nav-top__item"><a href="vacancy.html">Вакансії</a></li>
+                    <li class="nav-top__item"><a href="#vacancy.html">Вакансії</a></li>
                     <li class="nav-top__item"><a href="index.html#connect">Контакти</a></li>
                 </ul>
             </div>
@@ -156,6 +160,14 @@
             </div>
         </div>
     </div>
+
+    <!-- SCRIPTS -->
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- <script src="js/jquery.fancybox.min.js"></script> -->
+
+    <!-- my-js -->
+    <script src="js/main.js"></script>
 
 </body>
 
