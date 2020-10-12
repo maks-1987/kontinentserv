@@ -4,24 +4,35 @@
     font-family: $fnt;
     font-weight: 300;
 
+    @media (max-width: 768px) {
+        border-bottom: 3px solid $orange;
+    }
+
     &__row {
         @include flexbox;
         justify-content: space-between;
 
-        @media (max-width: 515px) {
+        @media (max-width: 536px) {
             flex-direction: column;
             align-self: center;
         }
     }
 
     &__logo {
-        visibility: hidden;
-        background-image: url("../img/logo.png");
+        // visibility: hidden;
+        background-image: url("../img/logo2.png");
+        border: 2px solid #ffffff;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 100% 100%;
         width: 200px;
         height: 90px;
+
+        @media (max-width: 536px) {
+            width: 150px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
     }
 
     &__contacts {
@@ -43,9 +54,14 @@
             font-size: 20px;
             margin-left: 50px;
             padding-left: 30px;
-            
-            @media (max-width: 510px){
+
+            @media (max-width: 768px) {
+                margin-right: 80px;
                 margin-left: 0;
+            }
+            @media (max-width: 536px) {
+                padding-right: 0;
+                margin-right: 00px;
             }
 
             &:before {
@@ -79,7 +95,7 @@
             content: "\f095";
         }
         .mail:before {
-            content: '\1f300';
+            content: "\1f300";
         }
     }
 }

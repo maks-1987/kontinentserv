@@ -12,39 +12,29 @@
     <div class="wrapper">
         <!-- buton-to-head -->
         <div class="to-head" id="button">
-            <a href="#">
-            </a>
+            <a href="#"></a>
         </div>
 
         <!-- BURGERMENU -->
-        <!-- <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-                <span></span>
-            </label>
-            <ul class="menu__box">
-                <li><a class="menu__item" href="#header">Головна</a></li>
-                <li><a class="menu__item" href="#services">Послуги</a></li>
-                <li><a class="menu__item" href="vacancy.html">Вакансії</a></li>
-                <li><a class="menu__item" href="#connect">Контакты</a></li>
-            </ul>
-        </div> -->
-        <div class="drop-down">
-            <nav role='navigation'>
-              <!-- <h1> - Navigation - </h1> -->
-              <ul>
-                <li><a href="#">Головна</a></li>
-                <li><a href="#">Послуги</a></li>
-                <li><a href="#">Вакансії</a></li>
-                <li><a href="#">Контакти</a></li>
-              </ul>
-              
-            </nav>  
+        <section class="burger">
+            <div class="drop-menu">
+                <nav>
+                    <ul>
+                        <li><a href="#header">Головна</a></li>
+                        <li><a href="index.html#services">Послуги</a></li>
+                        <li><a href="vacancy.html">Вакансії</a></li>
+                        <li><a href="index.html#connect">Контакти</a></li>
+                        <li><a class="phone" href="tel:+380504253205">+38 (050) 425 32 05</a></li>
+                        <li><a class="phone" href="tel:+380504253205">+38 (050) 481 30 14</a></li>
+                        <li><a class="mail" href="mailto:ekkontinent@ukr.net">ekkontinent@ukr.net</a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="menu">
-              <a class="trigger" href="#">&equiv;</a>
-              <a class="close" href="#">&times;</a>
+                <a class="trigger" href="#">&equiv;</a>
+                <a class="close" href="#">&times;</a>
             </div>
+        </section>
 
         <!-- HEADER -->
         <header class="header" id="header">
@@ -86,9 +76,10 @@
 
         <!-- SLIDER-CONTENT -->
         <section class="my-slick">
-            <p>Наші проекти</p>
+            <p class="slider__title">
+                Наші проекти
+            </p>
             <div class="container">
-
                 <div class="my-slick__inner">
                     <div class="my-slick__item">
                         <img src="img/slider-content/01.jpg" alt="">
@@ -114,9 +105,9 @@
 
         <!-- ----------- SERVICES ------------- -->
         <section class="services" id="services">
-            <div class="services__title">
+            <p class="services__title">
                 Наші послуги
-            </div>
+            </p>
             <div class="services__block">
                 <div class="block-img engineering">
                 </div>
@@ -158,7 +149,7 @@
                 <div class="block-text">
                     Технічне обслуговування касових апаратів, заправка, відновлення картриджів
                     <span class="phone">
-                        <a class="phone" target="_blank" href="tel:+380504253205">+38 (050)-425-32-05</a>
+                        <a class="phone" href="tel:+380504253205">+38 (050)-425-32-05</a>
                     </span>
                 </div>
             </div>
@@ -176,10 +167,9 @@
                 <div class="block-img project">
                 </div>
                 <div class="block-text">
-                    Виконання проетів з електроопалення
+                    Виконання проектів з електроопалення
                 </div>
             </div>
-
         </section>
 
         <!-- CONNECTING -->
@@ -207,6 +197,7 @@
                                     <a class="phone" href="tel:+380504253205">+38 (050) 425-32-05</a>
                                 </li>
                                 <li class="viber-link">
+                                    <img src="img/icons/SVG/viber.svg" alt="">
                                     <span>Група по обслуговуванню РРО:</span>
                                     <a target="_blank" class="viber"
                                         href="https://invite.viber.com/?g2=AQA8ytzxdFeOpEw3ai12v4fKWf1jibDC75lxfSTWOLKvmvte4EOdhZvtyluZQ%2FKV">Viber</a>
@@ -215,72 +206,29 @@
                         </div>
                     </div>
                     <div class="connect-block__form">
-                        <form>
-                            <div class="form-inner">
-                                <div class="form-inner__input">
-                                    <input required type="text" placeholder="Ім'я">
-                                    <input type="text" placeholder="Email">
-                                    <input required type="text" placeholder="Телефон">
-                                    <input type="text" placeholder="Адреса">
-                                </div>
-                                <div class="form-inner__text">
-                                    <textarea placeholder="Напишіть ваше повідомлення"></textarea>
-                                </div>
-                                <div class="g-recaptcha" data-sitekey="111"></div>
-                                <div class="form-inner__button">
-                                    <a href="#" type="submit">Відправити</a>
-                                </div>
+                        <form class="form-inner">
+                            <div class="form-inner__input">
+                                <input required type="text" placeholder="Ім'я">
+                                <input type="text" placeholder="Email">
+                                <input required type="text" placeholder="Телефон">
                             </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+                            <div class="form-inner__text">
+                                <textarea placeholder="Напишіть ваше повідомлення"></textarea>
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="6LceHtYZAAAAABY6N-tinqzA-uidBv8WFeJT3ZMk"
+                            data-size="">
 
-        <!-- ================ ExampleForm ================= -->
-        <section class="exampleform">
-            <div class="container">
-                <div class="exampleform__inner">
-                    <div class="exampleform__content">
-                        <form>
-                            <div class="exampleform__content-inner">
-                                <div class="exampleform__content-left">
-                                    <label>
-                                        Email
-                                        <input type="text">
-                                    </label>
-                                    <label>
-                                        Телефон
-                                        <input type="text">
-                                    </label>
-                                    <label>
-                                        ФИО
-                                        <input type="text">
-                                    </label>
-                                    <label>
-                                        Тема вопроса
-                                        <select>
-                                            <option>------</option>
-                                            <option>------</option>
-                                            <option>------</option>
-                                            <option>------</option>
-                                        </select>
-                                    </label>
-                                </div>
-                                <div class="exampleform__content-right">
-                                    <label>
-                                        Повідомлення
-                                        <textarea></textarea>
-                                    </label>
-                                    <button type="submit">Отримати консультацію</button>
-                                </div>
                             </div>
+                            <button class="form-inner__button">
+                                Відправити
+                                <!-- <a href="#" type="submit">Відправити</a> -->
+                            </button>
+
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- ================================= -->
 
         <!-- MAP -->
         <section class="map">
@@ -355,7 +303,7 @@
     <!-- my-js -->
     <script src="js/main.js"></script>
     <!-- CAPTHCA -->
-    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 
 </html>

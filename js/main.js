@@ -15,9 +15,9 @@ $(function () {
         // initialSlide:1,
         // autoplay: true,
         // autoplaySpeed: 3500,
-        pauseOnFocus:true,
-        pauseOnHover:true,
-        pauseOnDotsHover:true,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        pauseOnDotsHover: true,
         // draggable:false,
         // swipe:false, // swipe for mobiles
 
@@ -42,13 +42,13 @@ $(function () {
 })
 
 // ============= BURGER ================
-$('.menu a').click(function(){
- 
+$('.menu a').click(function () {
     $('.trigger').toggle();
     $('.menu').toggleClass('round');
     $('.close').toggle();
-    $('.drop-down').toggleClass('down');
-  });
+    $('.drop-menu').toggleClass('down');
+    $('body').toggleClass('lock');
+});
 
 // ============= SCROLL ================
 $('a[href^="#"').on('click', function () {

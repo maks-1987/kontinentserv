@@ -11,3 +11,6 @@ https://www.templatemonsterpreview.com/ru/demo/67941.html?_ga=2.215868183.180837
 https://www.templatemonster.com/blog/ru/sozdaem-knopku-naverh-s-css-jquery/
 
 ========================================
+reCaptcha
+https://joomla3-x.ru/administrirovanie/nastrojki/kapcha-joomla-3-captcha-recaptha-google
+========================================
