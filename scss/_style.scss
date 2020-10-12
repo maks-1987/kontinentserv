@@ -1,5 +1,5 @@
 .wrapper {
-    // height: 100%;
+    min-height: 100%;
     overflow: hidden;
 }
 .container {
@@ -195,7 +195,7 @@ body {
     width: 100%;
 }
 .banner__row {
-    padding: 18% 0;
+    padding: 18% 0 1% 0;
     text-align: center;
     left: 0;
     right: 0;
