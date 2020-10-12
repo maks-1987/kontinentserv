@@ -607,7 +607,7 @@ body {
   position: absolute;
   width: 100%;
   background: #002e5b;
-  top: -130%;
+  top: -150%;
   overflow: auto;
   -webkit-transition: top 0.4s ease-in-out;
   -o-transition: top 0.4s ease-in-out;
@@ -940,7 +940,7 @@ body {
     .services .block-img.tvinternet {
       background-image: url("../img/services/05.jpg"); }
     .services .block-img.counter {
-      background-image: url("../img/services/100.png"); }
+      background-image: url("../img/services/100.jpg"); }
     .services .block-img.project {
       background-image: url("../img/services/07.png"); }
   .services .block-text {
