@@ -591,6 +591,9 @@ body {
   font-family: "Conv_Roboto-Regular";
   font-weight: 300; }
 
+.burger {
+  display: none; }
+
 @media (max-width: 768px) {
   .burger {
     display: contents; }

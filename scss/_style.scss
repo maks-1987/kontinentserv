@@ -13,6 +13,9 @@ body {
     font-weight: 300;
 }
 // ============= BURGERMENU ==========================
+.burger{
+    display: none;
+}
 @media (max-width: 768px) {
     .burger {
         display: contents;
