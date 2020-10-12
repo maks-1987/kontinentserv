@@ -10,10 +10,10 @@
 html,
 body {
     font-family: $fnt;
-    font-weight: 200;
+    font-weight: 300;
 }
 // ============= BURGERMENU ==========================
-.burger {
+.burger{
     display: none;
 }
 @media (max-width: 768px) {
@@ -32,9 +32,9 @@ body {
     padding: 25px;
     position: absolute;
     width: 100%;
-    height: 99.99%;
+    // height: 99.99%;
     background: $blue;
-    top: -130%;
+    top: -150%;
     overflow: auto;
     transition: top 0.4s ease-in-out;
     box-shadow: 0 0 10px 2px #000;
@@ -65,20 +65,19 @@ body {
     position: absolute;
     top: 25px;
     right: 25px;
-    width: 60px;
-    height: 60px;
+    width: 42px;
+    height: 42px;
     text-align: center;
     border: 2px solid #fff;
     background: $orange;
     z-index: 999;
     color: #fff;
+    font-size: 38px;
     &:hover {
         background: $blue;
     }
     a {
         height: 100%;
-        display: inline-block;
-        font-size: 55px;
         font-weight: bold;
         color: #fff;
         margin: 0 auto;
@@ -126,7 +125,7 @@ body {
         transform: rotate(-180deg);
     }
 }
-@keyframes menu-down {
+@keyframes menu-spin-back {
     50% {
         border-radius: 100%;
     }
@@ -393,7 +392,7 @@ body {
             background-image: url("../img/services/05.jpg");
         }
         &.counter {
-            background-image: url("../img/services/100.png");
+            background-image: url("../img/services/100.jpg");
         }
         &.project {
             background-image: url("../img/services/07.png");
