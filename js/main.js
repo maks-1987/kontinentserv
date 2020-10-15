@@ -25,33 +25,8 @@ $(function () {
     });
 });
 
-// ============== BUTTON-UP ==============
-$(function () {
-    var btn = $('#button');
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 700) {
-            btn.addClass('show');
-        } else {
-            btn.removeClass('show');
-        }
-    });
-    btn.on('click', function (e) {
-        e.preventDefault();
-        $('html, body').animate({ scrollTop: 0 }, '300');
-    });
-})
-
-// ============= BURGER ================
-$('.menu a').click(function () {
-    $('.trigger').toggle();
-    $('.menu').toggleClass('round');
-    $('.close').toggle();
-    $('.drop-menu').toggleClass('down');
-    $('body').toggleClass('lock');
-});
-
 // ============= SCROLL ================
-$('a[href^="#"').on('click', function () {
+$('a[href^="#"]').on('click', function () {
     let href = $(this).attr('href');
     $('html, body').animate({
         scrollTop: $(href).offset().top
@@ -60,3 +35,44 @@ $('a[href^="#"').on('click', function () {
     });
     return false;
 });
+
+// ============= BURGER ================
+$(function () {
+    let menu = $('.burger-menu');
+    let button = $('.burger-menu__button');
+    let list = $('.burger-menu__list');
+
+    button.on('click', () => {
+        // e.preventDefault();
+        toggleMenu();
+    });
+
+    list.on('click', () => toggleMenu());
+
+    function toggleMenu() {
+        menu.toggleClass('burger-active');
+
+        if(menu.hasClass('burger-active')){
+            $('body').css('overflow', 'hidden');
+        }else{
+            $('body').css('overflow', 'visible');
+        }
+    }
+
+});
+
+// ============== BUTTON-UP ==============
+var btn = $('#button');
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 700) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
+});
+btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
+});
+
+// =====================================

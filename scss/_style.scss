@@ -12,126 +12,89 @@ body {
     font-family: $fnt;
     font-weight: 300;
 }
+
 // ============= BURGERMENU ==========================
-.burger{
+.burger-menu {
     display: none;
-}
-@media (max-width: 768px) {
-    .burger {
+
+    @media (max-width: 768px) {
         display: contents;
     }
-    body.lock {
-        overflow: hidden;
-    }
-    .drop-menu {
-        overflow: auto;
-    }
-}
 
-.drop-menu {
-    padding: 25px;
-    position: absolute;
-    width: 100%;
-    // height: 99.99%;
-    background: $blue;
-    top: -150%;
-    overflow: auto;
-    transition: top 0.4s ease-in-out;
-    box-shadow: 0 0 10px 2px #000;
-    z-index: 999;
-    li {
-        height: 50px;
-        width: 100%;
-        line-height: 50px;
-        text-align: center;
+    &__button {
+        position: fixed;
+        border-radius: 40%;
+        background-color: #e9e9e9;
+        right: 15px;
+        top: 15px;
+        width: 40px;
+        height: 40px;
+        z-index: 30;
+        filter: opacity(0.4);
+    }
 
-        &:hover {
-            background: $orange;
+    &__lines,
+    &__lines::before,
+    &__lines::after {
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: $blue;
+        transition: 0.3s;
+    }
+    &__lines {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &::before {
+            content: "";
+            top: -8px;
+        }
+        &::after {
+            content: "";
+            top: 8px;
         }
     }
-    a {
-        display: block;
-        min-width: 100%;
-        font-size: 25px;
-        color: #fff;
-    }
-}
-.down {
-    top: 0;
-    transition: top 0.4s ease-in-out;
-}
-.menu {
-    opacity: 0.6;
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 42px;
-    height: 42px;
-    text-align: center;
-    border: 2px solid #fff;
-    background: $orange;
-    z-index: 999;
-    color: #fff;
-    font-size: 38px;
-    &:hover {
-        background: $blue;
-    }
-    a {
+    &__list {
+        position: fixed;
+        background-color: rgb(113, 111, 151);
+        text-align: center;
         height: 100%;
-        font-weight: bold;
-        color: #fff;
-        margin: 0 auto;
-    }
-    .close {
-        display: none;
-    }
-}
-.menu:hover {
-    opacity: 1;
-}
-.trigger {
-    animation: menu-spin-back 0.4s ease-in-out;
-    animation-fill-mode: forwards;
-}
-.round {
-    animation: menu-spin 0.4s ease-in-out;
-    animation-fill-mode: forwards;
-}
+        width: 100%;
+        padding-top: 20px;
+        overflow-y: auto;
+        top: -100%;
+        transition: 0.3s;
+        z-index: 20;
 
-@-webkit-keyframes menu-spin {
-    50% {
-        border-radius: 100%;
+        a {
+            display: block;
+            text-transform: uppercase;
+            font-size: 22px;
+            padding: 10px 0;
+            color: #fff;
+        }
+        .email {
+            text-transform: none;
+        }
     }
-    100% {
-        border-radius: 100%;
-        transform: rotate(180deg);
-    }
+    // &__overlay{}
 }
-@keyframes menu-spin {
-    50% {
-        border-radius: 100%;
+.burger-active {
+    .burger-menu__lines {
+        background-color: transparent;
     }
-    100% {
-        border-radius: 100%;
-        transform: rotate(180deg);
+    .burger-menu__lines::before {
+        top: 0;
+        transform: rotate(220deg);
     }
-}
-@-webkit-keyframes menu-spin-back {
-    50% {
-        border-radius: 0;
+    .burger-menu__lines::after {
+        top: 0;
+        transform: rotate(-220deg);
     }
-    100% {
-        border-radius: 0;
-        transform: rotate(-180deg);
-    }
-}
-@keyframes menu-spin-back {
-    50% {
-        border-radius: 100%;
-    }
-    100% {
-        border-radius: 100%;
-        transform: rotate(180deg);
+    .burger-menu__list {
+        top: 0;
     }
 }
 
@@ -323,7 +286,7 @@ body {
 // ============= Services ===================
 .services {
     margin-top: 60px;
-    background-color: rgba(249, 169, 123, .12);
+    background-color: rgba(249, 169, 123, 0.12);
 
     &__title {
         font-size: 46px;
@@ -589,7 +552,6 @@ body {
         }
         .g-recaptcha {
             margin-top: 20px;
-            
         }
 
         &__button {

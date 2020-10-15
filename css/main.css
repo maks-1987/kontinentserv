@@ -677,145 +677,94 @@ body {
   font-weight: 300;
 }
 
-.burger {
+.burger-menu {
   display: none;
 }
-
 @media (max-width: 768px) {
-  .burger {
+  .burger-menu {
     display: contents;
   }
-
-  body.lock {
-    overflow: hidden;
-  }
-
-  .drop-menu {
-    overflow: auto;
-  }
 }
-.drop-menu {
-  padding: 25px;
+.burger-menu__button {
+  position: fixed;
+  border-radius: 40%;
+  background-color: #e9e9e9;
+  right: 15px;
+  top: 15px;
+  width: 40px;
+  height: 40px;
+  z-index: 30;
+  -webkit-filter: opacity(0.4);
+          filter: opacity(0.4);
+}
+.burger-menu__lines, .burger-menu__lines::before, .burger-menu__lines::after {
   position: absolute;
-  width: 100%;
-  background: #002e5b;
-  top: -150%;
-  overflow: auto;
-  -webkit-transition: top 0.4s ease-in-out;
-  -o-transition: top 0.4s ease-in-out;
-  transition: top 0.4s ease-in-out;
-  -webkit-box-shadow: 0 0 10px 2px #000;
-          box-shadow: 0 0 10px 2px #000;
-  z-index: 999;
+  width: 30px;
+  height: 2px;
+  background-color: #002e5b;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
-.drop-menu li {
-  height: 50px;
-  width: 100%;
-  line-height: 50px;
+.burger-menu__lines {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.burger-menu__lines::before {
+  content: "";
+  top: -8px;
+}
+.burger-menu__lines::after {
+  content: "";
+  top: 8px;
+}
+.burger-menu__list {
+  position: fixed;
+  background-color: #716f97;
   text-align: center;
-}
-.drop-menu li:hover {
-  background: #f06c1f;
-}
-.drop-menu a {
-  display: block;
-  min-width: 100%;
-  font-size: 25px;
-  color: #fff;
-}
-
-.down {
-  top: 0;
-  -webkit-transition: top 0.4s ease-in-out;
-  -o-transition: top 0.4s ease-in-out;
-  transition: top 0.4s ease-in-out;
-}
-
-.menu {
-  opacity: 0.6;
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  width: 42px;
-  height: 42px;
-  text-align: center;
-  border: 2px solid #fff;
-  background: #f06c1f;
-  z-index: 999;
-  color: #fff;
-  font-size: 38px;
-}
-.menu:hover {
-  background: #002e5b;
-}
-.menu a {
   height: 100%;
-  font-weight: bold;
+  width: 100%;
+  padding-top: 20px;
+  overflow-y: auto;
+  top: -100%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 20;
+}
+.burger-menu__list a {
+  display: block;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding: 10px 0;
   color: #fff;
-  margin: 0 auto;
 }
-.menu .close {
-  display: none;
-}
-
-.menu:hover {
-  opacity: 1;
+.burger-menu__list .email {
+  text-transform: none;
 }
 
-.trigger {
-  -webkit-animation: menu-spin-back 0.4s ease-in-out;
-          animation: menu-spin-back 0.4s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+.burger-active .burger-menu__lines {
+  background-color: transparent;
+}
+.burger-active .burger-menu__lines::before {
+  top: 0;
+  -webkit-transform: rotate(220deg);
+      -ms-transform: rotate(220deg);
+          transform: rotate(220deg);
+}
+.burger-active .burger-menu__lines::after {
+  top: 0;
+  -webkit-transform: rotate(-220deg);
+      -ms-transform: rotate(-220deg);
+          transform: rotate(-220deg);
+}
+.burger-active .burger-menu__list {
+  top: 0;
 }
 
-.round {
-  -webkit-animation: menu-spin 0.4s ease-in-out;
-          animation: menu-spin 0.4s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes menu-spin {
-  50% {
-    border-radius: 100%;
-  }
-  100% {
-    border-radius: 100%;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-}
-@keyframes menu-spin {
-  50% {
-    border-radius: 100%;
-  }
-  100% {
-    border-radius: 100%;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-}
-@-webkit-keyframes menu-spin-back {
-  50% {
-    border-radius: 0;
-  }
-  100% {
-    border-radius: 0;
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg);
-  }
-}
-@keyframes menu-spin-back {
-  50% {
-    border-radius: 100%;
-  }
-  100% {
-    border-radius: 100%;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-}
 #button {
   background-color: rgba(189, 189, 189, 0.5);
   width: 40px;
