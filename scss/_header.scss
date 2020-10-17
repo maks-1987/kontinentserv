@@ -20,18 +20,20 @@
 
     &__logo {
         // visibility: hidden;
-        background-image: url("../img/logo2.png");
+        background-image: url("../img/logo1.png");
         border: 2px solid #ffffff;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 100% 100%;
         width: 200px;
-        height: 90px;
+        height: 80px;
 
         @media (max-width: 536px) {
-            width: 150px;
-            height: 80px;
+            width: 140px;
+            height: 52px;
             margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 

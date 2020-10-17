@@ -3,25 +3,21 @@ $(function () {
     $('.my-slick__inner').slick({
         arrows: true,
         dots: true,
-        // fade: true,
         infinite: true,
-        // variableWidth: true,
-        // adaptiveHeight:true,
-        // centerMode:true,
-        // slidesToShow: 2,
-        // slidesToScroll: 2,
-        speed: 900,
-        easing: 'ease', // animation
-        // initialSlide:1,
-        // autoplay: true,
-        // autoplaySpeed: 3500,
+        autoplay: true,
+        autoplaySpeed: 3500,
         pauseOnFocus: true,
         pauseOnHover: true,
         pauseOnDotsHover: true,
+        // fade: true,
+        // centerMode:true,
+        // slidesToShow: 2,
+        // slidesToScroll: 2,
+        // speed: 900,
+        // easing: 'ease', // animation
+        // initialSlide:1,
         // draggable:false,
         // swipe:false, // swipe for mobiles
-
-
     });
 });
 
@@ -43,7 +39,6 @@ $(function () {
     let list = $('.burger-menu__list');
 
     button.on('click', () => {
-        // e.preventDefault();
         toggleMenu();
     });
 
@@ -58,7 +53,6 @@ $(function () {
             $('body').css('overflow', 'visible');
         }
     }
-
 });
 
 // ============== BUTTON-UP ==============
