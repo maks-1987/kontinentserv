@@ -504,7 +504,6 @@ template {
 }
 .header__row {
   display: -webkit-box;
-  display: ms-flexbox;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
@@ -549,7 +548,6 @@ template {
 }
 .header__contacts-list {
   display: -webkit-box;
-  display: ms-flexbox;
   display: -ms-flexbox;
   display: flex;
 }
@@ -621,7 +619,6 @@ template {
 }
 .nav-top__list {
   display: -webkit-box;
-  display: ms-flexbox;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
@@ -876,7 +873,6 @@ body {
 
 .slick-track {
   display: -webkit-box;
-  display: ms-flexbox;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
@@ -947,7 +943,6 @@ body {
 }
 .my-slick__inner .slick-dots {
   display: -webkit-box;
-  display: ms-flexbox;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
@@ -1011,7 +1006,6 @@ body {
 }
 .services__block {
   display: -webkit-box;
-  display: ms-flexbox;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
@@ -1118,7 +1112,6 @@ body {
 
 .connect-block {
   display: -webkit-box;
-  display: ms-flexbox;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
@@ -1310,7 +1303,6 @@ body {
 }
 .vacancy__row {
   display: -webkit-box;
-  display: ms-flexbox;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -1322,7 +1314,6 @@ body {
       -ms-flex: 0 1 33.333%;
           flex: 0 1 33.333%;
   display: -webkit-box;
-  display: ms-flexbox;
   display: -ms-flexbox;
   display: flex;
   padding: 10px 12px;
@@ -1344,7 +1335,6 @@ body {
 }
 .vacancy__row-item {
   display: -webkit-box;
-  display: ms-flexbox;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
@@ -1419,7 +1409,6 @@ body {
 }
 .footer__contact ul {
   display: -webkit-box;
-  display: ms-flexbox;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
@@ -1435,7 +1424,6 @@ body {
   line-height: 1.3;
   padding: 0 15px;
   display: -webkit-box;
-  display: ms-flexbox;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
