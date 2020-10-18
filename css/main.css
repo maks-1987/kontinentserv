@@ -778,9 +778,6 @@ body {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  -webkit-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  transition: background-color 0.3s;
   z-index: 998;
   -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   -o-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
@@ -796,22 +793,9 @@ body {
   opacity: 0.6;
 }
 
-.to-head:active {
-  background-color: #002e5b;
-}
-
 .show {
   opacity: 0.6;
   visibility: visible;
-}
-
-.to-head.show:hover {
-  cursor: pointer;
-  background-color: #f06c1f;
-  opacity: 1;
-}
-.to-head.show:hover a {
-  opacity: 1;
 }
 
 .banner {

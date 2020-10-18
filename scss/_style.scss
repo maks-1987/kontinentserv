@@ -5,7 +5,6 @@
 .container {
     max-width: 1140px;
     margin: 0 auto;
-    // padding: 0 10px;
 }
 html,
 body {
@@ -111,7 +110,6 @@ body {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    transition: background-color 0.3s;
     z-index: 998;
 
     transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
@@ -127,20 +125,9 @@ body {
     }
 }
 
-.to-head:active {
-    background-color: $blue;
-}
 .show {
     opacity: 0.6;
     visibility: visible;
-}
-.to-head.show:hover {
-    cursor: pointer;
-    background-color: $orange;
-    opacity: 1;
-    a {
-        opacity: 1;
-    }
 }
 
 // ============ Banner ====================
