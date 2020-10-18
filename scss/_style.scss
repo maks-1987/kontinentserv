@@ -15,10 +15,11 @@ body {
 
 // ============= BURGERMENU ==========================
 .burger-menu {
-    display: none;
+    visibility: hidden;
 
     @media (max-width: 768px) {
         display: contents;
+        visibility: initial;
     }
 
     &__button {
@@ -82,7 +83,6 @@ body {
             text-transform: none;
         }
     }
-    // &__overlay{}
 }
 .burger-active {
     .burger-menu__lines {
@@ -102,7 +102,7 @@ body {
 }
 
 // ============= Arrow ========================
-#button {
+.to-head {
     background-color: rgba(189, 189, 189, 0.5);
     width: 40px;
     height: 40px;
@@ -123,22 +123,24 @@ body {
         height: 100%;
         width: 100%;
         background: url("../img/icons/SVG/keyboard_arrow_up.svg") center / cover no-repeat;
-        opacity: 0.3;
+        opacity: 0.6;
     }
 }
-#button:hover {
-    cursor: poiner;
+
+.to-head:active {
+    background-color: $blue;
+}
+.show {
+    opacity: 0.6;
+    visibility: visible;
+}
+.to-head.show:hover {
+    cursor: pointer;
     background-color: $orange;
+    opacity: 1;
     a {
         opacity: 1;
     }
-}
-#button:active {
-    background-color: $blue;
-}
-#button.show {
-    opacity: 1;
-    visibility: visible;
 }
 
 // ============ Banner ====================
@@ -291,6 +293,7 @@ body {
 .services {
     margin-top: 60px;
     background-color: rgba(249, 169, 123, 0.12);
+    // padding-bottom: 20px;
 
     &__title {
         font-size: 46px;
@@ -299,6 +302,7 @@ body {
         text-align: center;
         margin-bottom: 40px;
         line-height: 1.2;
+        padding-top: 25px;
         text-transform: uppercase;
 
         @media (max-width: 768px) {
@@ -327,7 +331,7 @@ body {
         @media (max-width: 768px) {
             font-size: 36px;
             display: block;
-            margin-bottom: 60px;
+            padding-bottom: 60px;
         }
     }
 
@@ -377,6 +381,7 @@ body {
         @media (max-width: 768px) {
             font-size: 22px;
             text-align: center;
+            padding-top: 15px;
         }
 
         @media (max-width: 485px) {
@@ -457,7 +462,7 @@ body {
         }
     }
     .contacts-address {
-        padding-top: 30px;
+        padding-top: 15px;
         width: 70%;
         line-height: 1.4;
 
@@ -485,6 +490,17 @@ body {
             color: #000000;
         }
     }
+    
+    .phone{
+        text-decoration: underline;
+        text-decoration-color: $orange;
+        transition: text-decoration .3s;
+    }
+    .phone:hover{
+        transform: rotate();
+        text-decoration: none;
+    }
+
     .mail:before {
         font-family: "icomoon";
         content: "\1f300";
@@ -509,6 +525,7 @@ body {
         display: inline-block;
         color: royalblue;
         transform: scale(1.1, 1.2);
+        transition: .4s;
     }
 
     &__form {
@@ -562,8 +579,14 @@ body {
         }
 
         &__button {
+            margin-top: 10px;
             padding: 10px;
             background-color: $orange;
+            transition: .5s
+        }
+        &__button:hover{
+            border-radius: 40px;
+            
         }
     }
 }

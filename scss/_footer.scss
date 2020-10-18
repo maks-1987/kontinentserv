@@ -11,30 +11,36 @@
 
         ul {
             @include flexbox;
-
-            @media (max-width: 375px) {
-               display: block;
-            }
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         li {
-            flex-basis: 50%;
+            flex: 0 1 50%;
             line-height: 1.3;
+            padding: 0 15px;
         
             @include flexbox;
             justify-content: center;
 
-            @media (max-width: 375px) {
-                display: block;
+            @media (max-width: 480px) {
                 margin: 0 auto;
-                width: 80%;
                 margin-bottom: 40px;
+                min-width: 100%;
                 text-align: center;
 
                 &:last-child{
                     margin-bottom: 0;
                 }
             }  
+        }
+        
+        @media (max-width: 768px) {
+            a{
+                font-size: 22px;
+                line-height: 1.4;
+            }
+            
         }
     }
 
@@ -59,12 +65,14 @@
     .footer-social {
         text-align: center;
         padding-bottom: 20px;
+        
 
         a:before {
             font-family: "icomoon";
             content: "\f16d";
             font-size: 30px;
             color: $orange;
+            transition: .4s;
         }
         a:hover {
             &:before {
@@ -72,8 +80,12 @@
             }
         }
     }
+    &__phone{
+        color: #ffffff;
+    }
     &__email{
         color: $orange;
+        transition: .4s;
     }
     &__email:hover{
         color: #ffffff;

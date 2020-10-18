@@ -63,6 +63,7 @@ $(window).scroll(function () {
     } else {
         btn.removeClass('show');
     }
+
 });
 btn.on('click', function (e) {
     e.preventDefault();

@@ -208,14 +208,14 @@
                         </div>
                     </div>
                     <div class="connect-block__form">
-                        <form class="form-inner">
+                        <form action="#" class="form-inner">
                             <div class="form-inner__input">
-                                <input required type="text" placeholder="Ім'я">
-                                <input type="text" placeholder="Email">
-                                <input required type="text" placeholder="Телефон">
+                                <input id="name" required type="text" placeholder="Ім'я*">
+                                <input id="email" type="text" placeholder="Email*">
+                                <input id="phone" required type="text" placeholder="Телефон*">
                             </div>
                             <div class="form-inner__text">
-                                <textarea placeholder="Напишіть ваше повідомлення"></textarea>
+                                <textarea id="message" placeholder="Напишіть ваше повідомлення"></textarea>
                             </div>
                             <div  class="g-recaptcha" 
                             data-sitekey="6LceHtYZAAAAABY6N-tinqzA-uidBv8WFeJT3ZMk">
@@ -251,13 +251,13 @@
                                 <div class="footer__title">
                                     Головний офіс
                                 </div>
-                                <div class="footer__phone">
-                                    +38 (050) 340-05-84
+                                <div>
+                                    <a class="footer__phone" href="tel:+380503400584">+38 (050) 340-05-84</a>
                                 </div>
-                                <div class="footer__phone">
-                                    +38 (050) 653-58-05
+                                <div>
+                                    <a class="footer__phone" href="tel:+380506535805">+38 (050) 653-58-05</a>
                                 </div>
-                                <a href="mailto:ekkontinent@ukr.net" class="footer__email">
+                                <a class="footer__email" href="mailto:ekkontinent@ukr.net">
                                     ekkontinent@ukr.net
                                 </a>
                                 <div class="footer__address">
@@ -270,7 +270,9 @@
                                 <div class="footer__title">
                                     Офіс ТРК
                                 </div>
-                                +38 (050) 342-31-50
+                                <div>
+                                    <a class="footer__phone" href="tel:+380503423150">+38 (050) 342-31-50</a>
+                                </div>
                                 <div class="footer__address">
                                     Гагаріна 10
                                 </div>
