@@ -29,7 +29,7 @@ html, body {
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
-  font-family: PT Sans;
+  font-family: "Conv_Roboto-Regular";
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -1202,9 +1202,6 @@ body {
   transition: text-decoration 0.3s, -webkit-text-decoration 0.3s;
 }
 .connect-block .phone:hover {
-  -webkit-transform: rotate();
-      -ms-transform: rotate();
-          transform: rotate();
   text-decoration: none;
 }
 .connect-block .mail:before {

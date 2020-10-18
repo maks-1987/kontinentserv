@@ -9,7 +9,7 @@
     }
 
     &__row {
-        @include flexbox;
+        @include flexbox();
         justify-content: space-between;
 
         @media (max-width: 536px) {
